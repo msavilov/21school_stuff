@@ -27,7 +27,7 @@
 
 ## I - Предисловие / Foreword
 В этом документе описаны стандарты (Нормы) школы 42. Стандарт программирования определяет свод правил, которым нужно следовать во время написания кода. Вы должны всегда следовать правилам Норм во всех C-проектах в школе, если конкретно не указан иной вариант.    
-• This document describes the applicable standard (Norm) at 42. A programming standard deﬁnes a set of rules to follow when writing code. You must always respect the Norm for all C projects at the school, unless otherwise speciﬁed.
+• This document describes the applicable standard (Norm) at 42. A programming standard deﬁnes a set of rules to follow when writing code. You must always respect the Norm for all C projects at the school, unless otherwise speciﬁed.⋅⋅
 
 #### I.1 - Почему принят стандарт? / Why impose a standard? 
 Две главные цели, которые преследуют Нормы: / The Norms two main objective:
