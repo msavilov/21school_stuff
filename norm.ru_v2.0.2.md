@@ -71,11 +71,11 @@ However, as the“Norminette” always prevails, all your submissions must adapt
 5. Название глобальных переменных должны начинаться с префикса g_.    
 • A global’s name must start by g_.
 
-6. Название переменных и функций должны содержать строчные (мал.) буквы, цифры и симв. “_”.    
-• Variables and functions names can only contain lowercases, digits and ’_’ (Unix Case).
+6. Название переменных и функций должны содержать строчные (мал.) буквы, цифры и симв. ’\_’.    
+• Variables and functions names can only contain lowercases, digits and ’\_’ (Unix Case).
 
-7. Название файлов и каталогов должны содержать только строчные (мал.) буквы, цифры и ‘’_”.    
-• Files and directories names can only contain lowercases, digits and ’_’ (Unix Case).
+7. Название файлов и каталогов должны содержать только строчные (мал.) буквы, цифры и ’\_’.    
+• Files and directories names can only contain lowercases, digits and ’\_’ (Unix Case).
 
 8. Файл должен скомпилироваться.    
 • The ﬁle must compile.
@@ -87,9 +87,9 @@ However, as the“Norminette” always prevails, all your submissions must adapt
 1. Названия объектов (переменных, функций, макросов, типов, файлов и директории) должны быть понятны и запоминающимися. Только ‘counters’ (переменные-счетчики) могут быть названы так, как вам хочется.    
 • Objects (variables, functions, macros, types, ﬁles or directories) must have the most explicit or most mnemonic names as possible. Only ’counters’ can be named to your liking.
 
-2. Допускается использование аббревиатур только в том случае, если названия все равно остаются понятными. Если название содержит в себе более чем одно слово, то слова должны разделяться символом ‘_’.    
+2. Допускается использование аббревиатур только в том случае, если названия все равно остаются понятными. Если название содержит в себе более чем одно слово, то слова должны разделяться символом ’\_’ .    
 • Abreviations are tolerated as long as it’s to shorten the original name, and that it remains intelligible.
-If the name contains more than one word, words shall be separated by ‘_’.
+If the name contains more than one word, words shall be separated by ‘\_’ .
 
 3. Все идентификаторы (функции, макросы, типы, переменные и т. д.) должны быть на английском языке.    
 • All identiﬁers (functions, macros, types, variables, etc) must be in English.
@@ -239,3 +239,13 @@ If the name contains more than one word, words shall be separated by ‘_’.
 
 6. После #if, #ifdef или #ifndef вы должны сделать отступ для символов.    
 • You must indent characters following #if , #ifdef or #ifndef.    
+
+#### II.8 - Запрещенные штуки ! / Forbidden stuﬀ !
+##### Обязательная часть / Mandatory part
+1.	Вам запрещено использовать: / You’re not allowed to use:    
+•	цикл for    
+•	цикл do...while    
+•	оператор switch    
+•	оператор case    
+•	оператор goto    
+
