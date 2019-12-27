@@ -106,136 +106,136 @@ If the name contains more than one word, words shall be separated by ‘_’.
 • You must indent your code with 4-space tabulations. This is not the same as 4 average spaces, we’re talking about real tabulations here.
 
 3. Каждая функция должна содержать не более 25 строк, не считая строк с фигурными скобками этой функции.    
-📄 Each function must be maximum 25 lines, not counting the function’s own curly brackets.
+• Each function must be maximum 25 lines, not counting the function’s own curly brackets.
 
 4. Максимальная длина строки вместе с комментариями - 80 знаков. Внимание: табы считаются не как знаки, а как количество пробелов, которые они заменяют (1 Tab = 4 пробела).    
-📄 Each line must be at most 80 columns wide, comments included. Warning : a tabulation doesn’t count as a column, but as the number of spaces it represents.
+• Each line must be at most 80 columns wide, comments included. Warning : a tabulation doesn’t count as a column, but as the number of spaces it represents.
 
 5. Одна инструкция на строку.    
-📄 One instruction per line.
+• One instruction per line.
 
 6. Пустая строка должна быть пустой: никаких TAB’ов или пробелов.    
-📄 An empty line must be empty: no spaces or tabulations.
+• An empty line must be empty: no spaces or tabulations.
 
 7. Строка никогда не должна заканчиваться пробелом или TAB’ом.    
-📄 A line can never end with spaces or tabulations.
+• A line can never end with spaces or tabulations.
 
 8. Вам нужно начинать новую строку после каждой фигурной скобки или конца контрольной структуры.    
-📄 You need to start a new line after each curly bracket or end of control structure.
+• You need to start a new line after each curly bracket or end of control structure.
 
 9. Все запятые и точки с запятой должны иметь после себя пробел, только если это не конец строки.    
-📄 Unless it’s the end of a line, each comma or semi-colon must be followed by a space.
+• Unless it’s the end of a line, each comma or semi-colon must be followed by a space.
 
 10.	Каждый оператор (бинарныйдвоичный или тернарныйтроичный) или операндаргумент-операции должны быть разделены одним и только одним пробелом.    
-📄 Each operator (binary or ternary) or operand must be separated by one - and only one - space.
+• Each operator (binary or ternary) or operand must be separated by one - and only one - space.
 
 11.	За каждым ключевым словом С должен идти пробел, за исключением ключевых слов для типов (таких как int, char, float, и т.д.), а также sizeof.    
-📄 Each C keyword must be followed by a space, except for keywords for types (such as int, char, ﬂoat, etc.), as well as sizeof.
+• Each C keyword must be followed by a space, except for keywords for types (such as int, char, ﬂoat, etc.), as well as sizeof.
 
-12. Каждое объявление переменной должно иметь отступ в том же столбце. ???(Правильность под сомнением)???
-📄 Each variable declaration must be indented on the same column.    
+12. Каждое объявление переменной должно иметь отступ в том же столбце. :🚩некорректный_перевод🚩:
+• Each variable declaration must be indented on the same column.    
 
 13.	Звездочки указателей должны быть вплотную к названиям переменных.    
-📄 The asterisks that go with pointers must be stuck to variable names.
+• The asterisks that go with pointers must be stuck to variable names.
 
 14. Одно объявление переменной на строку.    
-📄 One single variable declaration per line.
+• One single variable declaration per line.
 
 15. Нельзя делать объявление и инициализацию в одной строке, за исключением глобальных и статических переменных.    
-📄 We cannot stick a declaration and an initialisation on the same line, except for global variables and static variables.
+• We cannot stick a declaration and an initialisation on the same line, except for global variables and static variables.
 
 16.	Объявления переменных должны быть в начале функции и должны быть отделены пустой строкой.    
-📄 Declarations must be at the beginning of a function, and must be separated by an empty line.
+• Declarations must be at the beginning of a function, and must be separated by an empty line.
 
 17.	Не должно быть пустой строки между объявлениями или реализациями.    
-📄 There cannot be an empty line between declarations or implementations.
+• There cannot be an empty line between declarations or implementations.
 
 18.	Многократные назначения строго запрещены. :🚩некорректный_перевод🚩:   
-📄 Multiple assignments are strictly forbidden.
+• Multiple assignments are strictly forbidden.
 
 19.	Вы можете добавить новую строку после инструкции или управляющей структуры, но вам придется добавить отступ в скобках или оператор присваивания. Операторы должны быть в начале строки.    
-📄 You may add a new line after an instruction or control structure, but you’ll have to add an indentation with brackets or aﬀectation operator. Operators must be at the beginning of a line.
+• You may add a new line after an instruction or control structure, but you’ll have to add an indentation with brackets or aﬀectation operator. Operators must be at the beginning of a line.
 
 #### II.3 - Параметры передаваемые в функцию / Functions parameters 
 ##### Обязательная часть / Mandatory part
 1. Функция может принимать максимум 4 именованных параметров.    
-📄 A function can take 4 named parameters maximum.
+• A function can take 4 named parameters maximum.
 
 2. Функция, которая ничего не возвращает аргументы, должна начинаться со слова (должна быть явно прототипирована со слова) “void”, в качестве аргумента.    
-📄 A function that doesn’t take arguments must be explicitely pototyped with the word "void" as argument.
+• A function that doesn’t take arguments must be explicitely pototyped with the word "void" as argument.
 
 #### II.4 - Функции / Functions
 ##### Обязательная часть / Mandatory part
 1. Параметры в прототипах функций должны быть названы.    
-📄 Parameters in functions’ prototypes must be named.
+• Parameters in functions’ prototypes must be named.
 
 2. Каждая функция должна быть отделена от следующей пустой строкой.    
-📄 Each function must be separated from the next by an empty line.
+• Each function must be separated from the next by an empty line.
 
 3. Вы не можете объявлять больше 5 переменных в одном блоке.    
-📄 You can’t declare more than 5 variables per bloc.
+• You can’t declare more than 5 variables per bloc.
 
 4. Возвращение функции должно быть между скобками.    
-📄 Return of a function has to be between parantheses.
+• Return of a function has to be between parantheses.
 
 ##### Рекомендации / Advice part
 1. Идентификаторы ваших функций должны быть выровнены в пределах одного и того же файла. То же самое касается заголовочных файлов.    
-📄 Your functions’ identiﬁers must be aligned within a same ﬁle. Same goes for header ﬁles.
+• Your functions’ identiﬁers must be aligned within a same ﬁle. Same goes for header ﬁles.
 
 #### II.5 - Определение имени, структура, перечисление и объединение / Typedef, struct, enum and union
 ##### Mandatory part / Обязательная часть
 1. Добавляйте табуляцию при объявлении struct(структуры), enum(перечисления) or union(объединения).    
-📄 Add a tabulation when declaring a struct, enum or union.
+• Add a tabulation when declaring a struct, enum or union.
 
 2. При объявлении переменной типа (struct, enum или union) добавьте один пробел в типе.    
-📄 When declaring a variable of type struct, enum or union, add a single space in the type.
+• When declaring a variable of type struct, enum or union, add a single space in the type.
 
 3. Добавляйте табуляцию между двумя параметрами typedef(определителя имени).    
-📄 Add a tabulation between two parameters of a typedef.
+• Add a tabulation between two parameters of a typedef.
 
 4. При объявлении (struct, union или enum) с typedef, применяются все правила. Новое имя typedef должно соотноситься с именем struct / union / enum.    
-📄 When declaring a struct, union or enum with a typedef, all rules apply. You must align the typedef’s name with the struct/union/enum’s name.
+• When declaring a struct, union or enum with a typedef, all rules apply. You must align the typedef’s name with the struct/union/enum’s name.
 
 5. Нельзя объявлять struct в .с файле.    
-📄 You cannot declare a structure in a .c ﬁle.
+• You cannot declare a structure in a .c ﬁle.
 
 #### II.6 - Заголовки / Headers
 ##### Обязательная часть / Mandatory Part
 1. В заголовочных файлах разрешено следующие : включения(#include) заголовка (системные или нет), объявления, определения, прототипы и макросы.    
-📄 The things allowed in header ﬁles are : header inclusions (system or not), declara-tions, deﬁnes, prototypes and macros.
+• The things allowed in header ﬁles are : header inclusions (system or not), declara-tions, deﬁnes, prototypes and macros.
 
 2. Все включения ( .c или .h) должны быть в начале файла.    
-📄 All includes (.c or .h) must be at the beginning of the ﬁle.
+• All includes (.c or .h) must be at the beginning of the ﬁle.
 
 3. Мы будем защищать заголовки от двойных включений. Если имя файла ft_foo.h, его визуальный макрос это FT_FOO_H.    
-📄 We’ll protect headers from double inclusions. If the ﬁle is ft_foo.h, its bystander macro is FT_FOO_H.
+• We’ll protect headers from double inclusions. If the ﬁle is ft_foo.h, its bystander macro is FT_FOO_H.
 
 4. Прототипы функций должны быть только в файлах формата .h    
-📄 Functions’ prototypes must exculively be in .h ﬁles.
+• Functions’ prototypes must exculively be in .h ﬁles.
 
 5. Неиспользованное включение заголовков ( .h) недопустимы.    
-📄 Unused header inclusions (.h) are forbidden.
+• Unused header inclusions (.h) are forbidden.
 
 ##### Рекомендации / Advice part
 1. Все включения заголовка должны быть обоснованы, как в .c файлах, так и в .h    
-📄 All header inclusions must be justiﬁed in a .c ﬁle as well as in a .h ﬁle.
+• All header inclusions must be justiﬁed in a .c ﬁle as well as in a .h ﬁle.
 
 #### II.7 - Макрос и препроцессоры / Macros and Pre-processors
 ##### Обязательная часть / Mandatory part
 1. Константы препроцессора (или #define), которые вы создаете, должны использоваться только для связывания литеральных и константных значений.    
-📄 Preprocessor constants (or #deﬁne) you create must be used only for associate literal and constant values.
+• Preprocessor constants (or #deﬁne) you create must be used only for associate literal and constant values.
 
 2. Запрещены все #define, созданные для обхода нормального и / или запутанного кода. Этот момент должен быть проверен человеком.    
-📄 All #deﬁne created to bypass the norm and/or obfuscate code are forbidden. This point must be checked by a human.
+• All #deﬁne created to bypass the norm and/or obfuscate code are forbidden. This point must be checked by a human.
 
 3. Вы можете использовать макросы, доступные в стандартных библиотеках, только если они разрешены в рамках данного проекта.    
-📄 You can use macros available in standard libraries, only if those ones are allowed in the scope of the given project.
+• You can use macros available in standard libraries, only if those ones are allowed in the scope of the given project.
 
 4. Многострочные макросы запрещены.    
-📄 Multiline macros are forbidden.
+• Multiline macros are forbidden.
 
 5. В верхнем регистре должны содержаться только имена макросов.    
-📄 Only macros names are uppercase.    
+• Only macros names are uppercase.    
 
 6. После #if, #ifdef или #ifndef вы должны сделать отступ для символов.    
-📄 You must indent characters following #if , #ifdef or #ifndef.    
+• You must indent characters following #if , #ifdef or #ifndef.    
