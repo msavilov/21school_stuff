@@ -243,9 +243,9 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 #### II.8 - Запрещенные штуки ! / Forbidden stuﬀ !
 ##### Обязательная часть / Mandatory part
 1.	Вам запрещено использовать: / You’re not allowed to use:    
-•	цикл for    
-•	цикл do...while    
-•	оператор switch    
-•	оператор case    
-•	оператор goto    
+- цикл for    
+- цикл do...while    
+- оператор switch    
+- оператор case    
+- оператор goto    
 
