@@ -1,6 +1,6 @@
 # The Norm v2.0.2 ru-en
-sources: https://42-21-school.blogspot.com/
-https://github.com/burninggoose/42-norme-ru
+sources: https://42-21-school.blogspot.com/    
+https://github.com/burninggoose/    
 
 ------------
 
@@ -24,8 +24,8 @@ https://github.com/burninggoose/42-norme-ru
 - II.11 - Makefile
 
 ### III - Дополнения
-- III.00 - Norminette errors
-- III.01 - Пример правильного оформления кода с комментариями
+- III.1 - Norminette errors
+- III.2 - Пример правильного оформления кода с комментариями
 
 ------------
 
@@ -386,3 +386,6 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 
 14. Error : wrong number of spaces in preprocessor indentation    
 Перед de^ne должен быть пробел: # de^ne
+
+#### III.2 - Пример правильного оформления кода с комментариям
+![](https://1.bp.blogspot.com/-FjoMv38cqGo/XSWxl_UEKnI/AAAAAAAAREs/tTf6txW4PjcUtrmbQ0BQjMB8iKpG0HL7gCLcBGAs/s1600/Norminette-21-school-sberbank.png)
