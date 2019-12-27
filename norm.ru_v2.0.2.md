@@ -1,4 +1,6 @@
 # The Norm v2.0.2 ru-en
+sources: https://42-21-school.blogspot.com/
+https://github.com/burninggoose/42-norme-ru
 
 ------------
 
@@ -22,8 +24,8 @@
 - II.11 - Makefile
 
 ### III - Дополнения
-- III.00 - Пример правильного оформления кода с комментариями
-- III.01 - Norminette errors
+- III.00 - Norminette errors
+- III.01 - Пример правильного оформления кода с комментариями
 
 ------------
 
@@ -330,3 +332,57 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 
 5. Все файлы исходники, которые вам нужны для компиляции вашего проекта, должны быть явно названы (указаны) в вашем Makefile.    
 • All source ﬁles you need to compile your project must be explicitly named in your Makeﬁle.
+
+------------
+
+## III - Дополнения (не относятся к оригиналу)
+#### III.1 - Norminette errors
+
+1. Error: global scope bad aligned    
+Найдите в своей функции строчку с объявлением функции вида int main.    
+Удалите пробел после int и вставьте после него два Tab.
+
+2. Error: 42 header not at top of the ^le    
+Вставьте заголовок 42 школы (fn+F1 в vim). Если он есть - попробуйте сделать его заново. (Ваш файл должен иметь расширение .с!)
+
+3. Error: must not begin by spaces/tabulations    
+Уберите пробелы или дабы из начала.
+
+4. Error: bad indentation    
+Проверьте отступы перед командами в функции! Должно быть как на примере. Только ТАБы, длиной в 4 пробела.
+
+5. Error: Space before FUNCTION_NAME    
+Замените пробел перед именем функции на Tab.
+
+6. Error: bad spacing after ft_print_comb    
+После конца функции (после последней ‘}’) не правильно задано количество пустых строк: должна быть одна.
+
+7. Error: function XXXXXXXXX has XX lines    
+Функция содержит слишком много строк! Максимум 25 строк!
+
+8. Error: declarations must be followed by one empty line in XXXXXXXXX    
+Проверьте, как вы объявляете переменные! Расстановка пустых строк должна быть как на примере, и объявлять можно по одной переменной за раз! После объявления переменных должна быть пустая строка(смотри пример!).
+
+7. Error: missing space around <    
+Не “a<b”, а “a < b”.
+
+8. Error: global scope bad aligned    
+проверьте дабы перед именами функций. Названия функций должны быть одна над другой, строго, по всей программе! Для выравнивания используйте Tab.
+
+9. declarations in XXXXXXXXX are bad aligned    
+Проблема в объявлении переменных в функции. С помощью ТАБов выровняйте их так, чтобы они располагались одна над другой, красивым столбиком. Если есть типы данных с длинным названием, то перед короткими (типа int) прийдется ставить несколько Tab.
+
+10. Warning: /Users/XXXXXXXX may not compile or is invalid for some reasons.    
+Проверьте базовый синтаксис С. Это можно сделать следующим образом: добавьте int main(){} в конец программы и скомпилируйте с помощью gcc - и он укажет на ошибки в программе.
+
+11. Error : declaration of ft_putchar forbidden in .c    
+Вы запускаете norminette без флагов. Используйте norminette -R CheckForbiddenSourceHeader (Moulinette будет использовать такие же флаги!)
+
+12. Error: missing void in function main    
+Если ваша функция не принимает на вход никаких аргументов, то это необходимо указать явно: int main(void){}.
+
+13. Error: multiple empty lines    
+Просто удалите лишние пустые строки.
+
+14. Error : wrong number of spaces in preprocessor indentation    
+Перед de^ne должен быть пробел: # de^ne
