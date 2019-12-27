@@ -27,28 +27,28 @@
 
 ## I - Предисловие / Foreword
 В этом документе описаны стандарты (Нормы) школы 42. Стандарт программирования определяет свод правил, которым нужно следовать во время написания кода. Вы должны всегда следовать правилам Норм во всех C-проектах в школе, если конкретно не указан иной вариант.    
-📄 This document describes the applicable standard (Norm) at 42. A programming standard deﬁnes a set of rules to follow when writing code. You must always respect the Norm for all C projects at the school, unless otherwise speciﬁed.
+• This document describes the applicable standard (Norm) at 42. A programming standard deﬁnes a set of rules to follow when writing code. You must always respect the Norm for all C projects at the school, unless otherwise speciﬁed.
 
 #### I.1 - Почему принят стандарт? / Why impose a standard? 
 Две главные цели, которые преследуют Нормы: / The Norms two main objective:
 1. Стандартизировать и правильно оформить ваш код, чтобы все (ученики, администрация и даже вы сами) могли легко читать и понимать его.    
-📄 To format and standardize your code so that anyone (students, staﬀ and even yourself) can read and understand them easily.
+• To format and standardize your code so that anyone (students, staﬀ and even yourself) can read and understand them easily.
 
 2. Помочь вам в написании короткого и простого кода.        
-📄 To guide you in writing short and simple code.
+• To guide you in writing short and simple code.
 
 #### I.2 - Нормы для подачи / The Norm for submissions
 Все ваши C-файлы должны следовать Нормам школы. За этим будут следить те, кто вас проверяет. Если вы совершите любую ошибку по Нормам, то получите 0 за все задание или даже весь проект. Во время проверки ваш проверяющий должен будет запустить проверку “Norminette” с вашими файлами. Только оценка “Norminette” должна быть взята во внимание. Только Обязательная часть Норм будет проверена “Norminette”.    
-📄 All of your C ﬁles must respect the school’s Norm. It will be checked by your grader. If you made any Norm error you’ll get a 0 for the exercise or even for the whole project.
+• All of your C ﬁles must respect the school’s Norm. It will be checked by your grader. If you made any Norm error you’ll get a 0 for the exercise or even for the whole project.
 During peer-evaluations, your grader will have to launch the “Norminette” present in your submission’s dumps. Only the mandatory part of the Norm will be checked by the “Norminette”.
 
 #### I.3 - Советы / Suggestions
 Достаточно быстро вы поймете, что Нормы не такие страшные, как кажутся. Наоборот, они помогают вам больше чем вы думаете. Они позволяют вам гораздо проще читать код ваших одноклассников и ваш код сам будет читабельным. Наказание за исходный файл с одной ошибкой по Нормам такое же, как и за файл с десятью ошибками. Мы настойчиво рекомендуем вам держать Нормы в голове во время написания кода - даже если вам сначала покажется, что они вас замедляют. Со временем, это превратится в рефлекс.    
-📄 You’ll realise soon enough that the Norm isn’t as intimidating as it seems. On the contrary, it’ll help you more than you know. It’ll allow you to read your classmates’ code more easily and vice versa. A source ﬁle containing one Norm error will be treated the same way as a source ﬁle containing 10 Norm errors. We strongly advise you to keep the Norm in mind while coding - even though you may feel it’s slowing you down at ﬁrst. In time, it’ll become a reﬂex.
+• You’ll realise soon enough that the Norm isn’t as intimidating as it seems. On the contrary, it’ll help you more than you know. It’ll allow you to read your classmates’ code more easily and vice versa. A source ﬁle containing one Norm error will be treated the same way as a source ﬁle containing 10 Norm errors. We strongly advise you to keep the Norm in mind while coding - even though you may feel it’s slowing you down at ﬁrst. In time, it’ll become a reﬂex.
 
 #### I.4 - Отказ от отвественности / Disclaimers
-“Norminette” – это программа. Как и все программы, в ней могут быть баги (ошибки). Если заметили один, то сообщите в соответствующей секции на форме. Однако, так как “Norminette” всегда превалирует, ваш код должен адаптироваться к ее багам.
->“Norminette” is a program, and all programs are subject to bugs. Should you spot one, please report it in the forum’s appropriate section.
+“Norminette” – это программа. Как и все программы, в ней могут быть баги (ошибки). Если заметили один, то сообщите в соответствующей секции на форме. Однако, так как “Norminette” всегда превалирует, ваш код должен адаптироваться к ее багам.    
+• “Norminette” is a program, and all programs are subject to bugs. Should you spot one, please report it in the forum’s appropriate section.
 However, as the“Norminette” always prevails, all your submissions must adapt to its bugs.
 
 ------------
@@ -57,53 +57,53 @@ However, as the“Norminette” always prevails, all your submissions must adapt
 #### II.1 - Название (Название переменных) / Denomination
 ##### Обязательная часть / Mandatory part
 1. Название structure (структур) должно начинаться с префикса s_.    
-📄 A structure’s name must start by s_.
+• A structure’s name must start by s_.
 
 2. Название typedef (создания типов) должны начинаться с префикса t_.    
-📄 A typedef’s name must start by t_.
+• A typedef’s name must start by t_.
 
 3. Название union (объединения) должны начинаться с префикса u_.    
-📄 A union’s name must start by u_.
+• A union’s name must start by u_.
 
 4. Название enum (перечисления) должны начинаться с префикса e_.    
-📄 An enum’s name must start by e_.
+• An enum’s name must start by e_.
 
 5. Название глобальных переменных должны начинаться с префикса g_.    
-📄 A global’s name must start by g_.
+• A global’s name must start by g_.
 
 6. Название переменных и функций должны содержать строчные (мал.) буквы, цифры и симв. “_”.    
-📄 Variables and functions names can only contain lowercases, digits and ’_’ (Unix Case).
+• Variables and functions names can only contain lowercases, digits and ’_’ (Unix Case).
 
 7. Название файлов и каталогов должны содержать только строчные (мал.) буквы, цифры и ‘’_”.    
-📄 Files and directories names can only contain lowercases, digits and ’_’ (Unix Case).
+• Files and directories names can only contain lowercases, digits and ’_’ (Unix Case).
 
 8. Файл должен скомпилироваться.    
-📄 The ﬁle must compile.
+• The ﬁle must compile.
 
 9. Запрещены символы, которых нет в стандартной ASCII таблице.    
-📄 Characters that aren’t part of the standard ascii table are forbidden.
+• Characters that aren’t part of the standard ascii table are forbidden.
 
 ##### Рекомендации / Advice part
 1. Названия объектов (переменных, функций, макросов, типов, файлов и директории) должны быть понятны и запоминающимися. Только ‘counters’ (переменные-счетчики) могут быть названы так, как вам хочется.    
-📄 Objects (variables, functions, macros, types, ﬁles or directories) must have the most explicit or most mnemonic names as possible. Only ’counters’ can be named to your liking.
+• Objects (variables, functions, macros, types, ﬁles or directories) must have the most explicit or most mnemonic names as possible. Only ’counters’ can be named to your liking.
 
 2. Допускается использование аббревиатур только в том случае, если названия все равно остаются понятными. Если название содержит в себе более чем одно слово, то слова должны разделяться символом ‘_’.    
-📄 Abreviations are tolerated as long as it’s to shorten the original name, and that it remains intelligible.
+• Abreviations are tolerated as long as it’s to shorten the original name, and that it remains intelligible.
 If the name contains more than one word, words shall be separated by ‘_’.
 
 3. Все идентификаторы (функции, макросы, типы, переменные и т. д.) должны быть на английском языке.    
-📄 All identiﬁers (functions, macros, types, variables, etc) must be in English.
+• All identiﬁers (functions, macros, types, variables, etc) must be in English.
 
 4. Любое использование глобальной переменной должно быть оправданным (обоснованным).    
-📄 Any use of global variable must be justiﬁable.
+• Any use of global variable must be justiﬁable.
 
 #### II.2 - Оформление / Formatting
 ##### Обязательная часть / Mandatory part
 1. Все ваши файлы должны начинаться с заголовка школы 42 (начиная с первой строки вашего файла). Этот заголовок по умолчанию доступен в редакторах emacs и vim в дампах.    
-📄 All your ﬁles must begin with the standard school header (from the ﬁrst line of the ﬁle). This header is available by default with emacs and vim in the dumps.
+• All your ﬁles must begin with the standard school header (from the ﬁrst line of the ﬁle). This header is available by default with emacs and vim in the dumps.
 
 2. В качестве отступа в вашем коде вы должны использовать 4-пробельную табуляцию. Это не тоже самое, что 4 пробела, мы говорим о настоящей табуляции (кнопка TAB).    
-📄 You must indent your code with 4-space tabulations. This is not the same as 4 average spaces, we’re talking about real tabulations here.
+• You must indent your code with 4-space tabulations. This is not the same as 4 average spaces, we’re talking about real tabulations here.
 
 3. Каждая функция должна содержать не более 25 строк, не считая строк с фигурными скобками этой функции.    
 📄 Each function must be maximum 25 lines, not counting the function’s own curly brackets.
@@ -234,8 +234,8 @@ If the name contains more than one word, words shall be separated by ‘_’.
 4. Многострочные макросы запрещены.    
 📄 Multiline macros are forbidden.
 
-5. В верхнем регистре должны содержаться только имена макросов.
+5. В верхнем регистре должны содержаться только имена макросов.    
 📄 Only macros names are uppercase.    
 
-6. После #if, #ifdef или #ifndef вы должны сделать отступ для символов.
+6. После #if, #ifdef или #ifndef вы должны сделать отступ для символов.    
 📄 You must indent characters following #if , #ifdef or #ifndef.    
