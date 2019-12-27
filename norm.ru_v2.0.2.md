@@ -55,7 +55,7 @@ However, as the“Norminette” always prevails, all your submissions must adapt
 
 ## II - The Norm / Нормы
 #### II.1 - Название (Название переменных) / Denomination
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Название structure (структур) должно начинаться с префикса s_.    
 • A structure’s name must start by s_.
 
@@ -83,7 +83,7 @@ However, as the“Norminette” always prevails, all your submissions must adapt
 9. Запрещены символы, которых нет в стандартной ASCII таблице.    
 • Characters that aren’t part of the standard ascii table are forbidden.
 
-##### Рекомендации / Advice part
+#### Рекомендации / Advice part
 1. Названия объектов (переменных, функций, макросов, типов, файлов и директории) должны быть понятны и запоминающимися. Только ‘counters’ (переменные-счетчики) могут быть названы так, как вам хочется.    
 • Objects (variables, functions, macros, types, ﬁles or directories) must have the most explicit or most mnemonic names as possible. Only ’counters’ can be named to your liking.
 
@@ -98,7 +98,7 @@ If the name contains more than one word, words shall be separated by ‘_’.
 • Any use of global variable must be justiﬁable.
 
 #### II.2 - Оформление / Formatting
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Все ваши файлы должны начинаться с заголовка школы 42 (начиная с первой строки вашего файла). Этот заголовок по умолчанию доступен в редакторах emacs и vim в дампах.    
 • All your ﬁles must begin with the standard school header (from the ﬁrst line of the ﬁle). This header is available by default with emacs and vim in the dumps.
 
@@ -157,7 +157,7 @@ If the name contains more than one word, words shall be separated by ‘_’.
 • You may add a new line after an instruction or control structure, but you’ll have to add an indentation with brackets or aﬀectation operator. Operators must be at the beginning of a line.
 
 #### II.3 - Параметры передаваемые в функцию / Functions parameters 
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Функция может принимать максимум 4 именованных параметров.    
 • A function can take 4 named parameters maximum.
 
@@ -165,7 +165,7 @@ If the name contains more than one word, words shall be separated by ‘_’.
 • A function that doesn’t take arguments must be explicitely pototyped with the word "void" as argument.
 
 #### II.4 - Функции / Functions
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Параметры в прототипах функций должны быть названы.    
 • Parameters in functions’ prototypes must be named.
 
@@ -178,12 +178,12 @@ If the name contains more than one word, words shall be separated by ‘_’.
 4. Возвращение функции должно быть между скобками.    
 • Return of a function has to be between parantheses.
 
-##### Рекомендации / Advice part
+#### Рекомендации / Advice part
 1. Идентификаторы ваших функций должны быть выровнены в пределах одного и того же файла. То же самое касается заголовочных файлов.    
 • Your functions’ identiﬁers must be aligned within a same ﬁle. Same goes for header ﬁles.
 
 #### II.5 - Определение имени, структура, перечисление и объединение / Typedef, struct, enum and union
-##### Mandatory part / Обязательная часть
+#### Mandatory part / Обязательная часть
 1. Добавляйте табуляцию при объявлении struct(структуры), enum(перечисления) or union(объединения).    
 • Add a tabulation when declaring a struct, enum or union.
 
@@ -200,7 +200,7 @@ If the name contains more than one word, words shall be separated by ‘_’.
 • You cannot declare a structure in a .c ﬁle.
 
 #### II.6 - Заголовки / Headers
-##### Обязательная часть / Mandatory Part
+#### Обязательная часть / Mandatory Part
 1. В заголовочных файлах разрешено следующие : включения(#include) заголовка (системные или нет), объявления, определения, прототипы и макросы.    
 • The things allowed in header ﬁles are : header inclusions (system or not), declara-tions, deﬁnes, prototypes and macros.
 
@@ -216,12 +216,12 @@ If the name contains more than one word, words shall be separated by ‘_’.
 5. Неиспользованное включение заголовков ( .h) недопустимы.    
 • Unused header inclusions (.h) are forbidden.
 
-##### Рекомендации / Advice part
+#### Рекомендации / Advice part
 1. Все включения заголовка должны быть обоснованы, как в .c файлах, так и в .h    
 • All header inclusions must be justiﬁed in a .c ﬁle as well as in a .h ﬁle.
 
 #### II.7 - Макрос и препроцессоры / Macros and Pre-processors
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Константы препроцессора (или #define), которые вы создаете, должны использоваться только для связывания литеральных и константных значений.    
 • Preprocessor constants (or #deﬁne) you create must be used only for associate literal and constant values.
 
