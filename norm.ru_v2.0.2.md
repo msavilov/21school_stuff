@@ -388,4 +388,4 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 Перед de^ne должен быть пробел: # de^ne
 
 #### III.2 - Пример правильного оформления кода с комментариям
-![](https://1.bp.blogspot.com/-FjoMv38cqGo/XSWxl_UEKnI/AAAAAAAAREs/tTf6txW4PjcUtrmbQ0BQjMB8iKpG0HL7gCLcBGAs/s1600/Norminette-21-school-sberbank.png)
+![](https://github.com/zanydazanydnaya/21-piscine-stuff/blob/master/src/norm_code_example.png)
