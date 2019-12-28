@@ -67,7 +67,7 @@ However, as the“Norminette” always prevails, all your submissions must adapt
 
 ## II - The Norm / Нормы
 #### II.1 - Название (Название переменных) / Denomination
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Название structure (структур) должно начинаться с префикса s_.    
 • A structure’s name must start by s_.
 
@@ -95,7 +95,7 @@ However, as the“Norminette” always prevails, all your submissions must adapt
 9. Запрещены символы, которых нет в стандартной ASCII таблице.    
 • Characters that aren’t part of the standard ascii table are forbidden.
 
-##### Рекомендации / Advice part
+#### Рекомендации / Advice part
 1. Названия объектов (переменных, функций, макросов, типов, файлов и директории) должны быть понятны и запоминающимися. Только ‘counters’ (переменные-счетчики) могут быть названы так, как вам хочется.    
 • Objects (variables, functions, macros, types, ﬁles or directories) must have the most explicit or most mnemonic names as possible. Only ’counters’ can be named to your liking.
 
@@ -112,7 +112,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.2 - Оформление / Formatting
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Все ваши файлы должны начинаться с заголовка школы 42 (начиная с первой строки вашего файла). Этот заголовок по умолчанию доступен в редакторах emacs и vim в дампах.    
 • All your ﬁles must begin with the standard school header (from the ﬁrst line of the ﬁle). This header is available by default with emacs and vim in the dumps.
 
@@ -173,7 +173,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.3 - Параметры передаваемые в функцию / Functions parameters 
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Функция может принимать максимум 4 именованных параметров.    
 • A function can take 4 named parameters maximum.
 
@@ -183,7 +183,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.4 - Функции / Functions
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Параметры в прототипах функций должны быть названы.    
 • Parameters in functions’ prototypes must be named.
 
@@ -203,7 +203,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.5 - Определение имени, структура, перечисление и объединение / Typedef, struct, enum and union
-##### Mandatory part / Обязательная часть
+#### Mandatory part / Обязательная часть
 1. Добавляйте табуляцию при объявлении struct(структуры), enum(перечисления) or union(объединения).    
 • Add a tabulation when declaring a struct, enum or union.
 
@@ -222,7 +222,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.6 - Заголовки / Headers
-##### Обязательная часть / Mandatory Part
+#### Обязательная часть / Mandatory Part
 1. В заголовочных файлах разрешено следующие : включения(#include) заголовка (системные или нет), объявления, определения, прототипы и макросы.    
 • The things allowed in header ﬁles are : header inclusions (system or not), declara-tions, deﬁnes, prototypes and macros.
 
@@ -245,7 +245,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.7 - Макрос и препроцессоры / Macros and Pre-processors
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Константы препроцессора (или #define), которые вы создаете, должны использоваться только для связывания литеральных и константных значений.    
 • Preprocessor constants (or #deﬁne) you create must be used only for associate literal and constant values.
 
@@ -267,7 +267,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.8 - Запрещенные штуки ! / Forbidden stuﬀ !
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Вам запрещено использовать: / You’re not allowed to use:    
 • цикл for    
 • цикл do...while    
@@ -284,7 +284,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.9 - Комментарии / Comments
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Вам разрешено комментировать свой код в исходных файлах.    
 • You’re allowed to comment your code in your source ﬁles.
 
@@ -297,7 +297,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 4. Комментарии не должны содержать // ??? Советы :🚩некор._перевод🚩:    
 • No comments with //.
 
-##### Рекомендации / Advice part
+#### Рекомендации / Advice part
 1. Ваши комментарии должны быть на английском языке. И они должны быть полезными.    
 • You comments must be in English. And they must be useful.
 
@@ -307,7 +307,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.10 - Files
-##### Обязательная часть / Mandatory part
+#### Обязательная часть / Mandatory part
 1. Вы не можете включить(#include) .c файл.    
 • You cannot include a .c ﬁle.
 
@@ -317,7 +317,7 @@ If the name contains more than one word, words shall be separated by ‘\_’ .
 ------------
 
 #### II.11 - Makeﬁle
-##### Основная часть / Mandatory part
+#### Основная часть / Mandatory part
 1. $(NAME), clean, fclean, re и все правила являются обязательными.    
 • The $(NAME), clean, fclean, re and all rules are mandatory.
 
