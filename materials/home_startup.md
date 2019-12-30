@@ -96,7 +96,29 @@ let g:airline_powerline_fonts = 1
 ```
 5.	Для установки и обновления плагинов через Vundle в vim пишем :PluginInstall и перезагружаем терминал
 
-#### 3.4 - Стандартные настройки
+#### 3.4 - 42header
+Обязательный заголовок школы 42 в документ, без него Normanette будет ругаться, а Moulinette откажется проверять.
+vim plugin
+1.	Создаем папку под vim плагины в домашнем каталоге, если ее там нет
+```
+mkdir -p ~/.vim/after/plugin
+```
+2.	Скачиваем, перемещаем и удаляем из дом.каталога
+```
+git clone https://github.com/pandark/42header.vim.git ~/42header && mv -v 42header.vim/plugin/42header.vim ~/.vim/after/plugin/ && rm -rf ~/42header
+```
+3.	Настраиваем $USER и $MAIL: заходим в ~/.zshrc (или ~/.bashrc) и прописываем строки
+```
+export USER=*username*
+export MAIL=*usermail*
+```
+4.	Перезагружаем терминал и тестим командой :FortyTwoHeader в vim 
+5.	Чтобы поменять с :FortyTwoHeader на :Stdheader - измените строку 187 в ~/.vim/after/plugin/42header.vim на ```command! Stdheader call s:fortytwoheader ()```
+5.1	Чтобы забиндить Хедер на f5, пропишите ```nmap <f5> :Stdheader<CR>``` в файле ~/.vimrc (если его нет, то создайте)
+
+vsix ext. для visual studio code - https://marketplace.visualstudio.com/items?itemName=kube.42header
+
+#### 3.5 - Стандартные настройки
 Пропишите данные команды в конце файла vim ~/.vimrc:
 ```
 set number
@@ -122,25 +144,33 @@ alias norm="norminette -R CheckForbiddenSourceHeader"
 ```
 затем перезапустите iTerm или Terminal и набирайте norm
 
-#### 4.2 - 42header
-Обязательный заголовок школы 42 в документ, без него Normanette будет ругаться, а Moulinette откажется проверять.
-vim plugin
-1.	Создаем папку под vim плагины в домашнем каталоге, если ее там нет
+#### 4.2 - 42Stupidity
+Компилирует, тестит (~Moulinette) и проверяет Norminette (только на территории школы).
+1.	Клонируем репоз. в домашний каталог в новую папку 42Stupidity
 ```
-mkdir -p ~/.vim/after/plugin
+git clone https://github.com/mirror12k/42us-stupidity.git ~/42Stupidity
 ```
-2.	Скачиваем, перемещаем и удаляем из дом.каталога
+2.	Переходим в созданный каталог и создаем каталог work, где будут храниться наши решения с файлами
 ```
-git clone https://github.com/pandark/42header.vim.git ~/42header && mv -v 42header.vim/plugin/42header.vim ~/.vim/after/plugin/ && rm -rf ~/42header
+cd ~/42Stupidity && mkdir day02/ex00
 ```
-3.	Настраиваем $USER и $MAIL: заходим в ~/.zshrc (или ~/.bashrc) и прописываем строки
+Клонируем свой репоз. с выполненными заданиями day05 в текущий каталог
 ```
-export USER=*username*
-export MAIL=*usermail*
+git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_05/nick day05
 ```
-4.	Перезагружаем терминал и тестим командой :FortyTwoHeader в vim 
-5.	Чтобы поменять с :FortyTwoHeader на :Stdheader - измените строку 187 в ~/.vim/after/plugin/42header.vim на ```command! Stdheader call s:fortytwoheader ()```
-5.1	Чтобы забиндить Хедер на f5, пропишите ```nmap <f5> :Stdheader<CR>``` в файле ~/.vimrc (если его нет, то создайте)
-
-vsix ext. для visual studio code - https://marketplace.visualstudio.com/items?itemName=kube.42header
-
+3.	spawn skript cоздает скрипты для всех задач из каталога day02, сценарий проверки
+```
+./spawn.pl day02 config_d02.pl
+```
+4.	Компилируем соотвествующий main.c для каждой функции
+```
+./tools/build.sh
+```
+5.	Проверяем наши ответы на Moulinette, Альтернатива Moulinette - Выполняем все тесты для каждой функции на основе 42Stupidity. Хорошие тесты будут отмечены, как 'good', ошибки будут выведены с большими восклицательными знаками
+```
+./tools/check_all.sh
+```
+6.	Проверяем наши ответы на Normiette с соотвествующими флагами
+```
+./tools/verify.sh
+```
