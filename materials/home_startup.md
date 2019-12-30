@@ -174,3 +174,25 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 ```
 ./tools/verify.sh
 ```
+#### 4.3 - Towel
+упрощает работу (на основе 42Stupidity), действие в одну команду
+1. Клонируем репозиторий в домашний каталог в новую папку Towel
+```
+git clone https://github.com/oscardemadriz/towel.git ~/Towel
+```
+2. Переходим в созданный каталог
+```
+cd ~/Towel
+```
+2. Клонируем свой репоз. с выполненными заданиями day05 в текущий каталог Towel
+```
+git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_05/nick day05
+```
+3. Возможно понадобится сменить права доступа
+```
+chmod +x towel.sh
+```
+4. Проверяем на Norminette, комплируем и тестим
+```
+./towel.sh day05
+```
