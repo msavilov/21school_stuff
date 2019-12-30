@@ -129,7 +129,7 @@ set cursorline
 
 ------------
 
-### 4 - main stuff
+### 4 - Прочее
 #### 4.1 - norminette
 Если вы вне школы, проверка кода .с на нормы https://github.com/AzRunRCE/42-C-Norme
 1.	Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
@@ -196,3 +196,8 @@ chmod +x towel.sh
 ```
 ./towel.sh day05
 ```
+
+#### 4.4 - 42 Homebrew
+https://github.com/kube/42homebrew    
+Moves temporary Homebrew data (Temp and Cache) to /tmp, leaving your home directory cleaner. 
+
