@@ -104,3 +104,43 @@ set number
 set cursorline
 "подсвечивает курсор
 ```
+
+------------
+
+### 4 - main stuff
+#### 4.1 - norminette
+Если вы вне школы, проверка кода .с на нормы https://github.com/AzRunRCE/42-C-Norme
+1.	Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
+2.	Установите wine mono, чтобы использовать .exe файлы на Linux
+3.	Закинуть exe и сопутствующие файлы в папку norm, типа 42Stupidity (для себя)
+• Проверка файлов стандартной Norminette:
+- Для проверки использовать команду norminette -R CheckForbiddenSourceHeader в директории с программой на с
+- Для проверки файлов типа *.h используется только norminette, без флагов
+• В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
+```
+alias norm="norminette -R CheckForbiddenSourceHeader"
+```
+затем перезапустите iTerm или Terminal и набирайте norm
+
+#### 4.2 - 42header
+Обязательный заголовок школы 42 в документ, без него Normanette будет ругаться, а Moulinette откажется проверять.
+vim plugin
+1.	Создаем папку под vim плагины в домашнем каталоге, если ее там нет
+```
+mkdir -p ~/.vim/after/plugin
+```
+2.	Скачиваем, перемещаем и удаляем из дом.каталога
+```
+git clone https://github.com/pandark/42header.vim.git ~/42header && mv -v 42header.vim/plugin/42header.vim ~/.vim/after/plugin/ && rm -rf ~/42header
+```
+3.	Настраиваем $USER и $MAIL: заходим в ~/.zshrc (или ~/.bashrc) и прописываем строки
+```
+export USER=*username*
+export MAIL=*usermail*
+```
+4.	Перезагружаем терминал и тестим командой :FortyTwoHeader в vim 
+5.	Чтобы поменять с :FortyTwoHeader на :Stdheader - измените строку 187 в ~/.vim/after/plugin/42header.vim на ```command! Stdheader call s:fortytwoheader ()```
+5.1	Чтобы забиндить Хедер на f5, пропишите ```nmap <f5> :Stdheader<CR>``` в файле ~/.vimrc (если его нет, то создайте)
+
+vsix ext. для visual studio code - https://marketplace.visualstudio.com/items?itemName=kube.42header
+
