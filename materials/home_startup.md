@@ -22,6 +22,7 @@ macOS Sierra - для тех, кто хочет понять, что такое 
 3) у кого bootloop при старте пишем в файле macOS 10.13.vmx 
 cpuid.1.eax = "0000:0000:0000:0001:0000:0110:1010:0101"
 smc.version = "0"
+4) Keyboard https://o7planning.org/ru/11555/how-to-use-windows-like-shortcuts-in-mac-os-virtual-machine
 
 ------------
 
