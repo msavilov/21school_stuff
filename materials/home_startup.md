@@ -117,8 +117,9 @@ let g:airline_powerline_fonts = 1
 5.	Для установки и обновления плагинов через Vundle в vim пишем :PluginInstall и перезагружаем терминал
 
 #### 3.4 - 42header
-Обязательный заголовок школы 42 в документ, без него Normanette будет ругаться, а Moulinette откажется проверять.
-vim plugin
+Обязательный заголовок школы 42 в документ, без него Normanette будет ругаться, а Moulinette откажется проверять.    
+vsix ext. для visual studio code - https://marketplace.visualstudio.com/items?itemName=kube.42header    
+vim plugin:
 1.	Создаем папку под vim плагины в домашнем каталоге, если ее там нет
 ```
 mkdir -p ~/.vim/after/plugin
@@ -135,8 +136,6 @@ export MAIL=*usermail*
 4.	Перезагружаем терминал и тестим командой :FortyTwoHeader в vim 
 5.	Чтобы поменять с :FortyTwoHeader на :Stdheader - измените строку 187 в ~/.vim/after/plugin/42header.vim на ```command! Stdheader call s:fortytwoheader ()```
 5.1	Чтобы забиндить Хедер на f5, пропишите ```nmap <f5> :Stdheader<CR>``` в файле ~/.vimrc (если его нет, то создайте)
-
-vsix ext. для visual studio code - https://marketplace.visualstudio.com/items?itemName=kube.42header
 
 #### 3.5 - Стандартные настройки
 Пропишите данные команды в конце файла vim ~/.vimrc:
