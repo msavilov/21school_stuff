@@ -126,8 +126,8 @@ export USER=*username*
 export MAIL=*usermail*
 ```
 4.	Перезагружаем терминал и тестим командой ```:FortyTwoHeader``` в vim 
-5.	Чтобы поменять с :FortyTwoHeader на :Stdheader - измените строку 187 в ~/.vim/after/plugin/42header.vim на ```command! Stdheader call s:fortytwoheader ()```
-    * Чтобы забиндить Хедер на f5, пропишите ```nmap <f5> :Stdheader<CR>``` в файле ~/.vimrc (если его нет, то создайте)
+5.	Чтобы поменять с :FortyTwoHeader на :Stdheader - измените строку 187 в ~/.vim/after/plugin/42header.vim на ```command! Stdheader call s:fortytwoheader ()```.    
+   Чтобы забиндить Хедер на f5, пропишите ```nmap <f5> :Stdheader<CR>``` в файле ~/.vimrc (если его нет, то создайте)
 
 #### 3.5 - Стандартные настройки
 Пропишите данные команды в конце файла vim ~/.vimrc:
@@ -141,19 +141,16 @@ set cursorline
 ------------
 
 ### 4 - Прочее
-#### 4.1 - norminette
-Если вы вне школы, проверка кода .с на нормы https://github.com/AzRunRCE/42-C-Norme
-1.	Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
-2.	Установите wine mono, чтобы использовать .exe файлы на Linux
-3.	Закинуть exe и сопутствующие файлы в папку norm, типа 42Stupidity (для себя)
-4. Проверка файлов стандартной Norminette:
-- Для проверки использовать команду norminette -R CheckForbiddenSourceHeader в директории с программой на с
-- Для проверки файлов типа *.h используется только norminette, без флагов
-• В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
-```
-alias norm="norminette -R CheckForbiddenSourceHeader"
-```
-затем перезапустите iTerm или Terminal и набирайте norm
+#### 4.1 - norminette - проверка кода на нормы
+Вне школы. Репозиторий [AzRunRCE](https://github.com/AzRunRCE/42-C-Norme)
+   * Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
+   * Установите wine mono, чтобы использовать .exe файлы на Linux    
+
+В школе. Проверка файлов стандартной Norminette:
+   * Для проверки использовать команду norminette -R CheckForbiddenSourceHeader в директ. с программой на с
+   * Для проверки файлов типа *.h используется только norminette, без флагов
+   * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его),:
+   ```alias norm="norminette -R CheckForbiddenSourceHeader"```. Затем перезапустите iTerm или Terminal и набирайте norm
 
 #### 4.2 - 42Stupidity
 Компилирует, тестит (~Moulinette) и проверяет Norminette (только на территории школы).
@@ -161,15 +158,15 @@ alias norm="norminette -R CheckForbiddenSourceHeader"
 ```
 git clone https://github.com/mirror12k/42us-stupidity.git ~/42Stupidity
 ```
-2.	Переходим в созданный каталог и создаем каталог work, где будут храниться наши решения с файлами
+2.	Переходим в созданный каталог и создаем каталог, где будут храниться наши решения с файлами
 ```
 cd ~/42Stupidity && mkdir day02/ex00
 ```
-Клонируем свой репоз. с выполненными заданиями day05 в текущий каталог
+Или клонируем свой репоз. с выполненными заданиями day02 в текущий каталог
 ```
-git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_05/nick day05
+git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_02/nick day02
 ```
-3.	spawn skript cоздает скрипты для всех задач из каталога day02, сценарий проверки
+3.	spawn skript cоздает скрипты (сценарий проверки) для всех задач из каталога day02
 ```
 ./spawn.pl day02 config_d02.pl
 ```
@@ -177,7 +174,7 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 ```
 ./tools/build.sh
 ```
-5.	Проверяем наши ответы на Moulinette, Альтернатива Moulinette - Выполняем все тесты для каждой функции на основе 42Stupidity. Хорошие тесты будут отмечены, как 'good', ошибки будут выведены с большими восклицательными знаками
+5.	Проверяем наши ответы. Выполняем все тесты для каждой функции. Хорошие тесты будут отмечены, как 'good', ошибки будут выведены с большими восклицательными знаками.
 ```
 ./tools/check_all.sh
 ```
@@ -186,29 +183,19 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 ./tools/verify.sh
 ```
 #### 4.3 - Towel
-упрощает работу (на основе 42Stupidity), действие в одну команду
+Упрощает работу (на основе 42Stupidity), действие в одну команду.
 1. Клонируем репозиторий в домашний каталог в новую папку Towel
 ```
 git clone https://github.com/oscardemadriz/towel.git ~/Towel
 ```
-2. Переходим в созданный каталог
-```
-cd ~/Towel
-```
+2. Переходим в созданный каталог ```cd ~/Towel```
 2. Клонируем свой репоз. с выполненными заданиями day05 в текущий каталог Towel
 ```
 git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_05/nick day05
 ```
-3. Возможно понадобится сменить права доступа
-```
-chmod +x towel.sh
-```
-4. Проверяем на Norminette, комплируем и тестим
-```
-./towel.sh day05
-```
+3. Возможно понадобится сменить права доступа ```chmod +x towel.sh```
+4. Проверяем на Norminette, комплируем и тестим ```./towel.sh day05```
 
 #### 4.4 - 42 Homebrew
 https://github.com/kube/42homebrew    
-Moves temporary Homebrew data (Temp and Cache) to /tmp, leaving your home directory cleaner. 
-
+Moves temporary Homebrew data (Temp and Cache) to /tmp, leaving your home directory cleaner.
