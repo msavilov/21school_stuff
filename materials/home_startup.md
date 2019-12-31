@@ -18,7 +18,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
    sudo apt install gcc
    ```
 5. Скачиваем [Visual Studio Code](https://code.visualstudio.com/)    
-Это редактор кода, он довольно многофункционален и гибок. Вы его можете и не устанавливать, а пользоваться только самой консолью Linux Ubuntu, кому как удобней будет, во всяком случае я советую попробовать и то и то.
+Это редактор кода, он довольно многофункционален и гибок. Вы его можете и не устанавливать, а пользоваться только самой консолью Linux Ubuntu, кому как удобней будет, во всяком случае я советую попробовать и то, и то.
 6. Заходим в Visual Studio Code → ctrl+shift+p → Terminal: Select Default Shell → WSL Bash
 7. Терминал открываем снизу или crtl+shift+'
 
