@@ -3,36 +3,28 @@
 ### 1.1 - Windows 10 (Bash + Visual Studio Code)
 Для тех, кто не хочет закачивать образы и запускать их на виртуальной машине предлагаю этот самый простой и удобный способ.
 1. Открываем Start menu в Windows 10 и ищем PowerShell, запускаем его от имени администратора
-2. Прописываем в PowerShell чтобы активировать Bash в Windows, попутно соглашаемся с установкой нажимая 'Y' и настраивая систему под себя
+2. Прописываем в PowerShell чтобы активировать Bash в Windows и настроить ее под себя:
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
-3. Скачиваем Linux Ubuntu из Microsoft Store и запускаем ее! Она должна обновиться!
-4. Вероятнее всего, что даже gcc вы поставить не сможете, поэтому. читаем вывод в терминал и ищем решение, у меня решение было в apt-get update, вероятнее всего, вам тоже нужно будет установить обновления:    
-   1. Переключаемся в root и скачиваем обновления
-   ```
-   sudo su && apt-get update
-   ```
-   2. Устанавливаем для теста gcc компилятор, если установка пройдет успешно, то все хорошо
-   ```
-   sudo apt install gcc
-   ```
+3. Скачиваем Linux Ubuntu из Microsoft Store и запускаем ее. Она должна обновиться!
+4. Вероятнее всего, что некоторые пакеты вы установить не сможете, поэтому читаем вывод в терминал и ищем решение. Я решил проблему через ```apt-get update```:    
+   1. Переключаемся в root и скачиваем обновления: ```sudo su && apt-get update```
+   2. Устанавливаем для теста gcc: ```sudo apt install gcc```. Если установка прошла успешно, то значит можно работать.
 5. Скачиваем [Visual Studio Code](https://code.visualstudio.com/)    
 Это редактор кода, он довольно многофункционален и гибок. Вы его можете и не устанавливать, а пользоваться только самой консолью Linux Ubuntu, кому как удобней будет, во всяком случае я советую попробовать и то, и то.
-6. Заходим в Visual Studio Code → ctrl+shift+p → Terminal: Select Default Shell → WSL Bash
-7. Терминал открываем снизу или crtl+shift+'
-
+6. Заходим в Visual Studio Code и меняем терминал: ctrl+shift+p → Terminal: Select Default Shell → WSL Bash
+   * Терминал открываем снизу или crtl+shift+'
 
 ### 1.2 - Linux Ubuntu
-1. Скачиваем VMware (https://nnmclub.to/forum/viewtopic.php?t=1338267)    
-Сразу оговорюсь, VMware очень хорошо оптимизирована, а VirtualBox - имеет много косяков. 
-2. Скачиваем Ubuntu Desktop 18.04.3 (64-bit) (https://ubuntu.ru/get) 
-3. Устанавливаем виртуалку на VMware, ничего сложного нету, главное выделите 20 гб свободного места 
+1. Скачиваем VMware (ищите на торрентах repack, могу лишь посоветовать nnm-club.ru).
+2. Скачиваем [Ubuntu Desktop](https://ubuntu.ru/get).
+3. Устанавливаем виртуалку в VMware, ничего сложного нету, главное выделите 20 гб свободного места.
 4. Сразу смело ставьте эти пакеты, через терминал:
 ```
 sudo apt install gcc && git && make && vim && gnome-tweak-tool
 ```
-gnome-tweak-tool нужна для изменения раскладки на alt-shift: заходим в Tweaks → KeyBoard&Mouse → Additional Layout Option → Switch to, меняем на нужную раскладку
+   * gnome-tweak-tool нужна для изменения раскладки на alt-shift: заходим в Tweaks → KeyBoard&Mouse → Additional Layout Option → Switch to, меняем на нужную раскладку
 
 ### 1.3 - macOS Sierra
 macOS Sierra - для тех, кто хочет понять, что такое макось (для тестов сойдет и Linux)
