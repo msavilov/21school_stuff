@@ -1,4 +1,6 @@
 # Home startup
+Откуда весь материал? Из сети. Все собрано по кусочкам и лично для себя. Я не выкладываю и выкладывать не буду готовые решения задач с комментраиями. Тут собраны материалы, которые помогут вам только организовать граммотную работу с самим кодом.
+
 ------------
 ### 1.1 - Windows 10 (Bash + Visual Studio Code)
 Для тех, кто не хочет закачивать образы и запускать их на виртуальной машине предлагаю этот самый простой и удобный способ.
@@ -27,25 +29,28 @@ sudo apt install gcc && git && make && vim && gnome-tweak-tool
    * gnome-tweak-tool нужна для изменения раскладки на alt-shift: заходим в Tweaks → KeyBoard&Mouse → Additional Layout Option → Switch to, меняем на нужную раскладку
 
 ### 1.3 - macOS Sierra
-macOS Sierra - для тех, кто хочет понять, что такое макось (для тестов сойдет и Linux)
-1) образ https://nnmclub.to/forum/viewtopic.php?t=1151080
-2) инструкция https://youtu.be/WYkgtMEDUXQ
-3) у кого bootloop при старте пишем в файле macOS 10.13.vmx 
+macOS Sierra - для тех, кто хочет понять, с какой OS мы будем работать в школе.
+1) Образ macOS [Sierra v.10.12.5 (16F73)](https://nnmclub.to/forum/viewtopic.php?t=1151080)
+2) [Установка](https://youtu.be/WYkgtMEDUXQ) macOS Sierra VMWare Workstation 
+3) У кого bootloop при старте, пишем в файле macOS 10.13.vmx
+```
 cpuid.1.eax = "0000:0000:0000:0001:0000:0110:1010:0101"
 smc.version = "0"
-4) Keyboard https://o7planning.org/ru/11555/how-to-use-windows-like-shortcuts-in-mac-os-virtual-machine
+```
+4) [Настройка клавиатуры](https://o7planning.org/ru/11555/how-to-use-windows-like-shortcuts-in-mac-os-virtual-machine)
 
 ------------
 
 ### 2 - Переходим с bash на zsh
-Почему? Читаем habr https://habr.com/ru/post/326580/
-1. Устанавливаем ZSH $ sudo apt-get install zsh
-2. Скачиваем и устанавливаем oh-my-zsh $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-3. Сделать ZSH шеллом по умолчанию $ sudo usermod -s /usr/bin/zsh имя_юзера. 
-4. После установки на дефолт нужно перезагрузить машину
-5. Чтобы выбрать новую тему, исправьте значение переменной ZSH_THEME в файле ~/.zshrc (ZSH_THEME="agnoster") и перезагрузите терминал    
-• Тема agnoster: для нормальной работы требуется скачать шрифты fonts-powerline (google it) и перезагрузка терминал или самой машины 
-6. Добавить строчку в ~/.zshrc, чтобы были подсказки по установке пакетов – (. /etc/zsh_command_not_found)
+Почему? Читаем [habr](https://habr.com/ru/post/326580/)
+1. Устанавливаем zsh ```sudo apt-get install zsh```
+2. Скачиваем и устанавливаем oh-my-zsh ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"```
+3. Сделать ZSH шеллом по умолчанию ```sudo usermod -s /usr/bin/zsh имя_юзера```, после установки нужно перезагрузить терминал.
+4. Чтобы выбрать новую тему, исправьте значение переменной ```ZSH_THEME="agnoster"``` в файле ~/.zshrc и перезагрузите терминал.   
+   * Тема agnoster: для нормальной работы требуется скачать шрифты [fonts-powerline](https://github.com/powerline/fonts) и перезагрузка терминал или самой машины. 
+   * Не забудьте скачать и установить сами шрифты себе, (если используете терминал через Win10) [DejaVuSansMono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono). Для Bash на Ubuntu на Windows: заходим в терминал → кликаем на значок слева сверху → Настройки → Шрифт → Выбираем DejaVu Sans Mono.    
+   Для Visual Studio Code: ctrl+shift+p → Terminal → меняем Font Family и Font Size под (DejaVu Sans Mono for Powerline)
+6. Добавить строчку в ~/.zshrc, чтобы были подсказки по установке пакетов ```. /etc/zsh_command_not_found```
 
 ------------
 
