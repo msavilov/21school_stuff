@@ -50,8 +50,8 @@ smc.version = "0"
 4. Чтобы выбрать новую тему, исправьте значение переменной ```ZSH_THEME="agnoster"``` в файле ~/.zshrc и перезагрузите терминал.   
    * Тема agnoster: для нормальной работы требуется скачать шрифты [fonts-powerline](https://github.com/powerline/fonts) и перезагрузка терминала или самой машины. 
    * Не забудьте скачать и установить сами шрифты себе, (если используете терминал через Win10) [DejaVuSansMono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono).    
-   Для Bash на Ubuntu на Windows: заходим в терминал → кликаем на значок слева сверху → Настройки → Шрифт → Выбираем DejaVu Sans Mono.    
-   Для Visual Studio Code: ctrl+shift+p → Open settings UI → Terminal → меняем Font Family и Font Size под (DejaVu Sans Mono for Powerline)
+   Для Bash на Ubuntu на Windows: заходим в терминал → кликаем на значок слева сверху → Настройки → Шрифт → Выбираем DejaVu Sans Mono for Powerline.    
+   Для Visual Studio Code: ctrl+shift+p → Open settings UI → Terminal → меняем Font Family ```DejaVu Sans Mono for Powerline``` и Font Size на 12.
 6. Добавить строчку в ~/.zshrc, чтобы были подсказки по установке пакетов ```. /etc/zsh_command_not_found```
 
 ------------
