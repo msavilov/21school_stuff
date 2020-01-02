@@ -104,6 +104,7 @@ Plugin 'Yavor-Ivanov/airline-monokai-subtle.vim'
 ```
 4.	Прописываем в ~/.vimrc в конце дока
 ```
+"/Theme settings/
 syntax enable
 colorscheme monokai
 let g:airline_theme = 'monokai_subtle'
