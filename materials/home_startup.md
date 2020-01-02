@@ -120,7 +120,7 @@ let g:airline_powerline_fonts = 1
 1.	Создаем папку под vim плагины в домашнем каталоге, если ее там нет ```mkdir -p ~/.vim/after/plugin```
 2.	Скачиваем, перемещаем и удаляем из дом.каталога
 ```
-git clone https://github.com/pandark/42header.vim.git ~/42header && mv -v 42header.vim/plugin/42header.vim ~/.vim/after/plugin/ && rm -rf ~/42header
+git clone https://github.com/pandark/42header.vim.git ~/42header && mv -v ~/42header.vim/plugin/42header.vim ~/.vim/after/plugin/ && rm -rf ~/42header
 ```
 3.	Настраиваем $USER и $MAIL: заходим в ~/.zshrc (или ~/.bashrc) и прописываем строки
 ```
