@@ -142,17 +142,17 @@ ___
 
 ------------
 
-### 6. text formatting
+### 6. text formatting ###
+_italic text_ or *italic text*    
+__bold text__ or **bold text**    
+___bold italic text___ or ***bold italic text***    
+~~Strikethrough text~~    
+_You **can** combine ~~them~~_
 
-*This text will be italic*    
-_This will also be italic_    
-**This text will be bold**    
-__This will also be bold__    
-*You **can** combine them*
 ```
-*This text will be italic*    
-_This will also be italic_    
-**This text will be bold**    
-__This will also be bold__    
-*You **can** combine them*
+_italic text_ or *italic text*  
+__bold text__ or **bold text**    
+___bold italic text___ or ***bold italic text ***
+~~Strikethrough text~~
+_You **can** combine ~~them~~_
 ```
