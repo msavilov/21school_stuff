@@ -170,7 +170,7 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 ```
 3.	spawn skript cоздает скрипты (сценарий проверки) для всех задач из каталога day02
 ```
-./spawn.pl day02 config_d02.pl
+./spawn.pl <day_repo> config_d<day_number>.pl
 ```
 4.	Компилируем соотвествующий main.c для каждой функции
 ```
