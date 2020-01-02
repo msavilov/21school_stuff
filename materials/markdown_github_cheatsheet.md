@@ -12,14 +12,14 @@ https://assemble.io/docs/Cheatsheet-Markdown.html
 
 ------------
 
-### 1. заголовки / headers
+### 1. заголовки / headers ###
 
 # h1 #
 ## h2 ##
 ### h3 ###
-#### h4
-##### h5
-###### h6
+#### h4 ####
+##### h5 #####
+###### h6 ######
 
 Alt-H1
 ======
@@ -31,9 +31,9 @@ Alt-H2
 # h1 #
 ## h2 ##
 ### h3 ###
-#### h4
-##### h5
-###### h6
+#### h4 ####
+##### h5 #####
+###### h6 ######
 
 Alt-H1
 ======
@@ -43,7 +43,7 @@ Alt-H2
 ```
 ------------
 
-### 2. игнорирование синтаксиса md / syntax ignore md    
+### 2. игнорирование синтаксиса md / syntax ignore md ###
 \*literal asterisks\*
 
 ```
@@ -66,7 +66,7 @@ _ underscore
 
 ------------
 
-### 3.1 ссылки / links    
+### 3.1 ссылки / links ###
 [Обычная ссылка в строке](https://www.google.com)    
 [Обычная ссылка с title](https://www.google.com "Сайт Google")    
 [Относительная ссылка на документ](../blob/master/LICENSE)
@@ -76,7 +76,7 @@ _ underscore
 [Относительная ссылка на документ](../blob/master/LICENSE)
 ```
 
-### 3.2 изображения / images    
+### 3.2 изображения / images ###
 ![](https://github.com/zanydazanydnaya/cheatsheets/blob/master/materials/finn_example.png "Title is optional")
 ```
 ![](https://github.com/zanydazanydnaya/cheatsheets/blob/master/materials/finn_example.png "Title is optional")
@@ -84,7 +84,7 @@ _ underscore
 
 ------------
 
-### 4. линии / lines
+### 4. линии / lines ###
 
 ---
 ***
@@ -97,7 +97,7 @@ ___
 
 ------------
 
-### 5.1 ненумерованный список / unsorted list
+### 5.1 ненумерованный список / unsorted list ###
 
 * Можно размечать звездочками
   * Item 2a
@@ -112,7 +112,7 @@ ___
 + Или плюсами
 ```
 
-### 5.2 нумерованный список / sorted list
+### 5.2 нумерованный список / sorted list ###
 1. Первый пункт нумерованного списка
 2. Второй пункт
    * Ненумерованный вложенный список.
@@ -138,4 +138,21 @@ ___
    Чтобы вставить разрыв строки, но не начинать новый параграф, нужно добавить два пробела перед новой строкой.  
    Этот текст начинается с новой строки, но находится в том же абзаце.  
    (В некоторых обработчиках, например на Github, пробелы в начале новой строки не нужны.)
+```
+
+------------
+
+### 6. text formatting
+
+*This text will be italic*    
+_This will also be italic_    
+**This text will be bold**    
+__This will also be bold__    
+*You **can** combine them*
+```
+*This text will be italic*    
+_This will also be italic_    
+**This text will be bold**    
+__This will also be bold__    
+*You **can** combine them*
 ```
