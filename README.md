@@ -1,10 +1,11 @@
 # 21school-stuff
 Путеводитель по школе для автостопщиков.
 
-TODO: 2_cursus_manual.en
+TODO: the_art_of_peer_evaluation
 
 ---
 #### test
+  * cursus_manual.ru
   * rules_kzn2020
   * home_sturtup
   * norme.ru
