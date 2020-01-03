@@ -1,4 +1,4 @@
-### Easy Code ###  
+### Easy Code ###
 * https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
 https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai
 https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
