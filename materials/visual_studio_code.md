@@ -4,6 +4,7 @@ https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai
 https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
 https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator
 https://marketplace.visualstudio.com/items?itemName=lmcarreiro.vscode-smart-column-indenter
+https://marketplace.visualstudio.com/items?itemName=456ken.multicolorhighlighter
 
 ### Comment ###
 * https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
