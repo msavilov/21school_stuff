@@ -3,7 +3,7 @@
 Презентационная форма для подачи заявок
 > Presidential form for turn in requests
 
-Краткое изложение: Это пособие объясняет как использовать Vogsphere, a.k.a система сдачи работ Школы 42, включая основы git. Git это утилита, которая использует Vogsphere, по контролю версий.
+Краткое изложение: Это пособие объясняет как использовать Vogsphere, a.k.a система сдачи работ Школы 42, включая основы git. Git - это утилита, которая использует Vogsphere, по контролю версий.
 > Summary: This manual explains how to use the Vogsphere, a.k.a 42’ turn-in system, including git basics. Git is the version-control software the Vogsphere uses.
 
 ------------
@@ -13,7 +13,7 @@
 
 | !             |
 | ------------- |
-| НИКОГДА НЕ ТЯНИТЕ с командой git clone вашего репозитория, чтобы начать работу с ним. Таким образом, если что-то пойдет не так, у вас будет достаточно времени, чтобы разобраться с этим.
+| НИКОГДА НЕ ТЯНИТЕ с командой ```git clone``` вашего репозитория, чтобы начать работу с ним. Таким образом, если что-то пойдет не так, у вас будет достаточно времени, чтобы разобраться с этим.
 > NEVER WAIT FOR THE LAST MINUTE to clone your repository and to start using it. Thus, if anything goes wrong, you’ll have plenty of time to resolve it.
 
 | !             |
