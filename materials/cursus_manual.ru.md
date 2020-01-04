@@ -1,9 +1,8 @@
 # 42’s curriculum manual #
 Пособие по учебному плану Школы 42
 
-Pedago Teampedago@42.fr    
-Резюмирование: Добро пожаловать в Школу 42! Но как тут все работает?     
-Summary: Welcome to 42! But how does it work?
+Краткое изложение: Добро пожаловать в Школу 42! Но как тут все работает?     
+• Summary: Welcome to 42! But how does it work?
 
 ------------
 
