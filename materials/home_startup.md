@@ -23,10 +23,10 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 2. Скачиваем [Ubuntu Desktop](https://ubuntu.ru/get).
 3. Устанавливаем виртуалку в VMware, ничего сложного нету, главное выделите 20 гб свободного места.
 4. Сразу смело ставьте эти пакеты, через терминал:
-```
-sudo apt install gcc && git && make && vim && gnome-tweak-tool
-```
-   * gnome-tweak-tool нужна для изменения раскладки на alt-shift: заходим в Tweaks → KeyBoard&Mouse → Additional Layout Option → Switch to, меняем на нужную раскладку
+   ```
+   sudo apt install gcc && git && make && vim && gnome-tweak-tool
+   ```
+   gnome-tweak-tool нужна для изменения раскладки на alt-shift: заходим в Tweaks → KeyBoard&Mouse → Additional Layout Option → Switch to, меняем на нужную раскладку
 
 ### 1.3 - macOS Sierra
 macOS Sierra - для тех, кто хочет понять, с какой OS мы будем работать в школе.
@@ -197,6 +197,9 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 3. Возможно понадобится сменить права доступа ```chmod +x towel.sh```
 4. Проверяем на Norminette, комплируем и тестим ```./towel.sh day05```
 
-#### 4.4 - 42 Homebrew
+#### 4.4 - 42 Homebrew ####
 https://github.com/kube/42homebrew    
 Moves temporary Homebrew data (Temp and Cache) to /tmp, leaving your home directory cleaner.
+
+#### 4.5 - 42_RU_vogsphere_access remote ####
+https://github.com/school21moscow/42_RU_vogsphere_access
