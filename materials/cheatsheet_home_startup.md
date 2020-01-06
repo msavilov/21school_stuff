@@ -145,13 +145,15 @@ set cursorline
 #### 4.1 - norminette - проверка кода на нормы
 Вне школы. Репозиторий [AzRunRCE](https://github.com/AzRunRCE/42-C-Norme)
    * Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
-   * Установите wine mono, чтобы использовать .exe файлы на Linux    
+   * Установите ```sudo apt install mono-complete```, чтобы использовать .exe файлы на Linux через ```mono program.exe```.
+   * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
+    ```alias norm="cd /mnt/d/Work/21school/21school_piscine-c/.debug/ && mono appRegex.exe && cd -"``` Затем перезапустите iTerm или Terminal и набирайте norm.    
 
 В школе. Проверка файлов стандартной Norminette:
    * Для проверки использовать команду norminette -R CheckForbiddenSourceHeader в директ. с программой на с
    * Для проверки файлов типа *.h используется только norminette, без флагов
-   * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его),:
-   ```alias norm="norminette -R CheckForbiddenSourceHeader"```. Затем перезапустите iTerm или Terminal и набирайте norm
+   * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
+   ```alias norm="norminette -R CheckForbiddenSourceHeader"```. Затем перезапустите iTerm или Terminal и набирайте norm.
 
 #### 4.2 - 42Stupidity
 Компилирует, тестит (~Moulinette) и проверяет Norminette (только на территории школы).

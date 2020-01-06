@@ -34,8 +34,8 @@
 * video: [wc, ifconfig, bc, find, env, export](https://youtu.be/0itcTgtTNzE)
 * video: [stdout, stderr](https://youtu.be/53ez4eU3fH0)
 * video: [C in 42 min](https://youtu.be/0NPVivMBRsU)
-* video: [First stem in C](https://youtu.be/3Jlvk35xITA)
   * done in .doc
+* video: [First stem in C](https://youtu.be/3Jlvk35xITA)
 * video: [Introduction to pointers](https://youtu.be/lxpt8AVQ5Kc)
 * video: [Assignment](https://youtu.be/RzTDMUt3mgo)
 * video: [Dereferenciation](https://youtu.be/sWEy1g-GLDI)

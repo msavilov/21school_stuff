@@ -6,6 +6,10 @@ ls -la – показать все файлы вкл. скрытые
 rm R *каталог* - удалить каталог с файлами
 sudo su – root
 exit – exit root
+
+dpkg --list
+sudo apt-get purge --auto-remove packagename
+
 ```
 
 ```
