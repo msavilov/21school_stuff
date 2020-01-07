@@ -185,6 +185,10 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 ```
 ./tools/verify.sh
 ```
+7. alias
+```
+alias day02="./spawn.pl ../02_day02 config_d02.pl && ./tools/build.sh && ./tools/check_all.sh"
+```
 #### 4.3 - Towel
 Упрощает работу (на основе 42Stupidity), действие в одну команду.
 1. Клонируем репозиторий в домашний каталог в новую папку Towel
