@@ -10,10 +10,10 @@
 ---
 
 #### .pdf map ####
-* cursus_manual.ru.md
-* vogsphere-doc.ru.md
-* the_art_of_peer_evaluation.ru.md
-* norme.ru.md
+* [cursus_manual.ru](materials/cursus_manual.ru.md)
+* [vogsphere-doc.ru](materials/vogsphere-doc.ru.md)
+* [the_art_of_peer_evaluation.ru](materials/the_art_of_peer_evaluation.md)
+* [norme.ru.md](materials/norme.ru.md)
 
 #### video's map ####
 * video: [Introduction to Vogsphere](https://youtu.be/dyLOcpZwuEA)
@@ -33,10 +33,9 @@
 * video: [sort, cut](https://youtu.be/A9Bu-zaeGZw)
 * video: [wc, ifconfig, bc, find, env, export](https://youtu.be/0itcTgtTNzE)
 * video: [stdout, stderr](https://youtu.be/53ez4eU3fH0)
-* video: [C in 42 min](https://youtu.be/0NPVivMBRsU)
-  * done in .doc
-* video: [First stem in C](https://youtu.be/3Jlvk35xITA)
-* video: [Introduction to pointers](https://youtu.be/lxpt8AVQ5Kc)
+* video: [C in 42 min](https://youtu.be/0NPVivMBRsU), document: [перевод](/todo/)
+* video: [First stem in C](https://youtu.be/3Jlvk35xITA),
+* video: [Introduction to pointers](https://youtu.be/lxpt8AVQ5Kc), document: [перевод](materials/videos/20_Introduction_to_pointers.md)
 * video: [Assignment](https://youtu.be/RzTDMUt3mgo)
 * video: [Dereferenciation](https://youtu.be/sWEy1g-GLDI)
 * video: [Pointer arithmetic](https://youtu.be/ueEQnuOAMGE)
