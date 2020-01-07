@@ -10,7 +10,7 @@
 ---
 
 #### Materials - 0 ####
-* video: [Introduction to Vogsphere](https://youtu.be/dyLOcpZwuEA)
+* video: [Introduction to Vogsphere](https://youtu.be/dyLOcpZwuEA), document: [перевод](materials/videos/01_introduction_to_vogsphere.md)
 * video: [Demonstration of Vogsphere](https://youtu.be/Vp_1Yyoh43E)
 * video: [The pedagogy part 1](https://youtu.be/BrrfcEtDeXs)
 * video: [The pedagogy part 2](https://youtu.be/Vmk65GxAoXE)
@@ -34,7 +34,7 @@
 * video: [stdout, stderr](https://youtu.be/53ez4eU3fH0)
 
 #### Materials - 2 ####
-* video: [C in 42 min](https://youtu.be/0NPVivMBRsU), document: [перевод](/todo/)
+* video: [C in 42 min](https://youtu.be/0NPVivMBRsU), document: [перевод](materials/videos/18_c_in_42_min.docx)
 * video: [First stem in C](https://youtu.be/3Jlvk35xITA)
 * document: [norme.ru.md](materials/norme.ru.md)
 
