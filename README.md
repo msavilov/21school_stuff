@@ -10,6 +10,9 @@
 ---
 
 #### Materials - 0 ####
+* document: [cursus_manual.ru](materials/cursus_manual.ru.md)
+* document: [vogsphere-doc.ru](materials/vogsphere-doc.ru.md)
+* document: [the_art_of_peer_evaluation.ru](materials/the_art_of_peer_evaluation.md)
 * video: [Introduction to Vogsphere](https://youtu.be/dyLOcpZwuEA), document: [перевод](materials/videos/01_introduction_to_vogsphere.md)
 * video: [Demonstration of Vogsphere](https://youtu.be/Vp_1Yyoh43E)
 * video: [The pedagogy part 1](https://youtu.be/BrrfcEtDeXs)
@@ -21,9 +24,6 @@
 * video: [Basic commands](https://youtu.be/Q0mZn__JB0o)
 * video: [Filesistem](https://youtu.be/_j2Ac-Odh5Q)
 * video: [touch, cat](https://youtu.be/9wW7jhuMCQw)
-* document: [cursus_manual.ru](materials/cursus_manual.ru.md)
-* document: [vogsphere-doc.ru](materials/vogsphere-doc.ru.md)
-* document: [the_art_of_peer_evaluation.ru](materials/the_art_of_peer_evaluation.md)
 
 #### Materials - 1 ####
 * video: [echo, cat, more](https://youtu.be/MrDA7LpFWJA)
