@@ -39,7 +39,7 @@
 * document: [norme.ru.md](materials/norme.ru.md)
 
 #### Materials - 3 ####
-* video: [Introduction to pointers](https://youtu.be/lxpt8AVQ5Kc), document: [перевод](materials/videos/20_Introduction_to_pointers.md)
+* video: [Introduction to pointers](https://youtu.be/lxpt8AVQ5Kc), document: [перевод](materials/videos/20_introduction_to_pointers.md)
 * video: [Assignment](https://youtu.be/RzTDMUt3mgo)
 * video: [Dereferenciation](https://youtu.be/sWEy1g-GLDI)
 * video: [Pointer arithmetic](https://youtu.be/ueEQnuOAMGE)
