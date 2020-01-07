@@ -9,13 +9,7 @@
 
 ---
 
-#### .pdf map ####
-* [cursus_manual.ru](materials/cursus_manual.ru.md)
-* [vogsphere-doc.ru](materials/vogsphere-doc.ru.md)
-* [the_art_of_peer_evaluation.ru](materials/the_art_of_peer_evaluation.md)
-* [norme.ru.md](materials/norme.ru.md)
-
-#### video's map ####
+#### Materials - 0 ####
 * video: [Introduction to Vogsphere](https://youtu.be/dyLOcpZwuEA)
 * video: [Demonstration of Vogsphere](https://youtu.be/Vp_1Yyoh43E)
 * video: [The pedagogy part 1](https://youtu.be/BrrfcEtDeXs)
@@ -27,14 +21,24 @@
 * video: [Basic commands](https://youtu.be/Q0mZn__JB0o)
 * video: [Filesistem](https://youtu.be/_j2Ac-Odh5Q)
 * video: [touch, cat](https://youtu.be/9wW7jhuMCQw)
+* document: [cursus_manual.ru](materials/cursus_manual.ru.md)
+* document: [vogsphere-doc.ru](materials/vogsphere-doc.ru.md)
+* document: [the_art_of_peer_evaluation.ru](materials/the_art_of_peer_evaluation.md)
+
+#### Materials - 1 ####
 * video: [echo, cat, more](https://youtu.be/MrDA7LpFWJA)
 * video: [head, tail, grep](https://youtu.be/hO1Z82kS6WE)
 * video: [Redirections](https://youtu.be/jcKlDWjvrzI)
 * video: [sort, cut](https://youtu.be/A9Bu-zaeGZw)
 * video: [wc, ifconfig, bc, find, env, export](https://youtu.be/0itcTgtTNzE)
 * video: [stdout, stderr](https://youtu.be/53ez4eU3fH0)
+
+#### Materials - 2 ####
 * video: [C in 42 min](https://youtu.be/0NPVivMBRsU), document: [перевод](/todo/)
-* video: [First stem in C](https://youtu.be/3Jlvk35xITA),
+* video: [First stem in C](https://youtu.be/3Jlvk35xITA)
+* document: [norme.ru.md](materials/norme.ru.md)
+
+#### Materials - 3 ####
 * video: [Introduction to pointers](https://youtu.be/lxpt8AVQ5Kc), document: [перевод](materials/videos/20_Introduction_to_pointers.md)
 * video: [Assignment](https://youtu.be/RzTDMUt3mgo)
 * video: [Dereferenciation](https://youtu.be/sWEy1g-GLDI)
@@ -85,4 +89,4 @@
 * video: [Binary trees Balancing](https://youtu.be/5RE6OLZK5_0)
 
 TODO: переводы видео  
-Если хотите помочь с переводом, то пишите в личку.
+Если хотите помочь с переводом, то pull request или пишите в личку
