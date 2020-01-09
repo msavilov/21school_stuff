@@ -61,12 +61,13 @@ sudo apt-get purge --auto-remove packagename - удалить установле
 1. Устанавливаем zsh ```sudo apt-get install zsh```
 2. Скачиваем и устанавливаем oh-my-zsh ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"```
 3. Сделать ZSH шеллом по умолчанию ```sudo usermod -s /usr/bin/zsh имя_юзера```, после установки нужно перезагрузить терминал.
-4. Чтобы выбрать новую тему, исправьте значение переменной ```ZSH_THEME="agnoster"``` в файле ~/.zshrc и перезагрузите терминал.   
-   * Тема agnoster: для нормальной работы требуется скачать шрифты [fonts-powerline](https://github.com/powerline/fonts) и перезагрузка терминала или самой машины. 
-   * Не забудьте скачать и установить сами шрифты себе, (если используете терминал через Win10) [DejaVuSansMono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono).    
-   Для Bash на Ubuntu на Windows: заходим в терминал → кликаем на значок слева сверху → Настройки → Шрифт → Выбираем ```DejaVu Sans Mono for Powerline```.    
-   Для Visual Studio Code: ctrl+shift+p → Open settings UI → Terminal → меняем Font Family ```DejaVu Sans Mono for Powerline``` и Font Size на 12.
-6. Добавить строчку в ~/.zshrc, чтобы были подсказки по установке пакетов ```. /etc/zsh_command_not_found```
+4. Чтобы выбрать новую тему, исправьте значение переменной ```ZSH_THEME="agnoster"``` в файле ~/.zshrc и перезагрузите терминал.
+   * Тема agnoster: для нормальной работы требуется скачать шрифты [fonts-powerline](https://github.com/powerline/fonts) и перезагрузка терминала или самой машины.
+   * Не забудьте скачать и установить сами шрифты себе, (если используете терминал через Win10) [DejaVuSansMono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono).
+     * Для Bash на Ubuntu на Windows: заходим в терминал → кликаем на значок слева сверху → Настройки → Шрифт → Выбираем ```DejaVu Sans Mono for Powerline```.
+     * Для Visual Studio Code: ctrl+shift+p → Open settings UI → Terminal → меняем Font Family ```DejaVu Sans Mono for Powerline``` и Font Size на 12.
+   * Делим строку (~с текущей директорией и >input) на две строки: редактируем файл ```~/.oh-my-zsh/themes/agnoster.zsh-theme``` → 82 строка (раздел promt_end), ```echo -n "%{%f%}"``` меняем на ```echo -n "\n%{%f%}"```. Если хотите чтобы перед input у вас был символ ">", то ```echo -n "\e[m\n>%{%f%}"```.
+5. Чтобы были подсказки по установке пакетов - добавляем строчку в ~/.zshrc,  ```. /etc/zsh_command_not_found```
 
 ---
 
