@@ -8,13 +8,13 @@
 [FAQ Школы 21](https://docs.google.com/spreadsheets/d/1TdkoNjlj8RChC64Vi9igEjNY2q_sc_JMcunMk3oYywg/edit#gid=1558877365)
 
 #### Polotence ####
-* [1 - Unix shell](polotence/polotence.1_unix-shell.md)
-* [2 - bash](polotence/polotence.2_bash.md)
-* [3 - Vim](polotence/polotence.3_vim.md)
-* [4 - Code check](polotence/polotence.4_code-check.md)
-* [5 - Other](polotence/polotence.5_other.md)
-* [6 - Visual Studio Code](polotence/polotence.6_vsc.md)
-* [7 - Markdown cheatsheet](polotence.7_markdown-cheatsheet.md)
+* [1 - Unix shell](materials/polotence/polotence.1_unix-shell.md)
+* [2 - bash](materials/polotence/polotence.2_bash.md)
+* [3 - Vim](materials/polotence/polotence.3_vim.md)
+* [4 - Code check](materials/polotence/polotence.4_code-check.md)
+* [5 - Other](materials/polotence/polotence.5_other.md)
+* [6 - Visual Studio Code](materials/polotence/polotence.6_vsc.md)
+* [7 - Markdown cheatsheet](materials/polotence.7_markdown-cheatsheet.md)
 
 ---
 
