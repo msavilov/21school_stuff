@@ -23,63 +23,59 @@ GitHub Markdown
 Other
    * [pdf preview](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
-### 3.2 - Notes ###
-Disable mini-map (settings.json): `"editor.minimap.enabled": false     // disable mini-map`
+### 3.2 - settings.json ###
+```
+{
+  "editor.minimap.enabled": false,     // disable mini-map
+}
+```
 
-### 3.3 - Windows 10: WSL + Code Debug with mingw64(incide MSYS2) ###
-Установка MSYS2:
-1. Скачиваем msys2-x86_64 и устанавливаем согласно [инструкции](http://www.msys2.org/)
-2. `pacman -Ss gcc` // ищем пакеты связанные с gcc и выбираем нужный нам для компиляции
-3. `pacman -S mingw-w64-x86_64-toolchain` // устанавливаем нужным пакет
-4. Открываем Пуск / MSYS2 MinGW 64-bit и пишем `gcc -v`, чтобы проверить их наличие, если не работает то перезапустите терминал и попробуйте еще раз
-5. Для возможности использования инструментов в cmd.exe (таких как ls -l, или rm): перейдите в Мой компьютер / Свойства / Дополнительные параметры системы / Дополнительно / Переменные среды / Переменные среды для пользователя Username / Path → Изменить → Создать `C:\msys64\mingw64\bin` и `C:\msys64\usr\bin`
-6. Да, как вариант, вы можете не использовать WSL на MSYS2, но вы должны понимать в чем их различия.
+### 3.3 - Windows 10: Code Debug with Mingw-w64 ###
+Установка [Mingw-w64](https://code.visualstudio.com/docs/cpp/config-mingw):
+1. Скачиваем [Mingw-w64](http://mingw-w64.org/doku.php/download/mingw-builds) через Sourceforge и запускаем установщик. Прописываем путь установки в `C:\`
+2. Для возможности использования инструментов в cmd.exe: перейдите в Мой компьютер / Свойства / Дополнительные параметры системы / Дополнительно / Переменные среды / Переменные среды для пользователя Username / Path → Изменить → Создать `C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin`.
+3. Открываем cmd и пишем `gcc -v`, чтобы проверить работоспособность.
 
 Настройка VSCode / debug:
 1. Устанавливаем recommended расширения по типу [С++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 2. Меняем настройки терминала Ctrl+Shift+P / Preferences: Open Settings (JSON) / settings.json
 ```
 {
-    // Terminal settings
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-    "terminal.integrated.env.windows": { "CHERE_INVOKING": "1" }, // Use this to keep bash from doing a 'cd ${HOME}'
-    "terminal.integrated.automationShell.windows": "powershell.exe", // prevent fails of build task when integrated shell https://github.com/microsoft/vscode/issues/43588
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe", // [debug error] prevent fails of build task with defaultshell = powershell
 }
 ```
 3. Переходим к коду, который будем debug'ить: File / Open Workspace / *ваш проект* / main.c
 4. Создаем `tasks.json`: Terminal / Configure Tasks:
 ```
 {
-    "tasks": 
-    [
-      {
-        "type": "shell",
-        "label": "gcc.exe build active file",
-        "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
-        "args": 
-        [
-          "-Wall",
-          "-Wextra",
-          "-Werror",
-          "-g",
-          "${file}",
-          "-o",
-          "${fileDirname}\\${fileBasenameNoExtension}.exe"
-        ],
-        "options": {
-          "cwd": "C:\\msys64\\mingw64\\bin\\bin"
-        }
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "gcc.exe build active file",
+      "command": "C:\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gcc.exe",
+      "args": 
+      [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "C:\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin"
       }
-    ],
-    "version": "2.0.0"
-  }
+    }
+  ],
+  "version": "2.0.0"
+}
 ```
 5. Переходим опять к main.c и создаем `launch.json`: Debug / Add Configuration:
 ```
 {
     "version": "0.2.0",
-    "configurations": 
-    [
+    "configurations": [
         {
             "name": "Build (gcc) and debug (gdb) active file",
             "type": "cppdbg",
@@ -91,7 +87,7 @@ Disable mini-map (settings.json): `"editor.minimap.enabled": false     // disabl
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "C:\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -105,3 +101,27 @@ Disable mini-map (settings.json): `"editor.minimap.enabled": false     // disabl
 }
 ```
 6. Переходим опять к main.c и Debug / Start Debugging
+7. Переключаемся через терминалы (WSL) через [Shell launcher](https://marketplace.visualstudio.com/items?itemName=Tyriar.shell-launcher)
+```
+{
+    "shellLauncher.shells.windows": 
+    [
+        {
+            "shell": "C:\\Windows\\System32\\wsl.exe",
+            "label": "WSL Bash"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\cmd.exe",
+            "label": "cmd"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "label": "PowerShell"
+        },
+        {
+            "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "label": "Git bash"
+        }
+    ],
+}
+```
