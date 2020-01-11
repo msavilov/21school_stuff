@@ -8,10 +8,10 @@
 #### Polotence ####
 * [1 - Unix OS](materials/polotence/polotence.1_unix-os.md)
 * [2 - bash](materials/polotence/polotence.2_bash.md)
-* [3 - Vim](materials/polotence/polotence.3_vim.md)
-* [4 - Code check](materials/polotence/polotence.4_code-check.md)
-* [5 - Other](materials/polotence/polotence.5_other.md)
-* [6 - Visual Studio Code](materials/polotence/polotence.6_vsc.md)
+* [3 - Visual Studio Code](materials/polotence/polotence.3_vsc.md)
+* [4 - Vim](materials/polotence/polotence.4_vim.md)
+* [5 - Code check](materials/polotence/polotence.5_code-check.md)
+* [6 - Other](materials/polotence/polotence.6_other.md)
 * [7 - Markdown cheatsheet](materials/polotence.7_markdown-cheatsheet.md)
 
 ---

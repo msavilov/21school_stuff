@@ -1,12 +1,11 @@
 # 1 - Unix OS #
 [Unix shell](https://ru.wikipedia.org/wiki/Командная_оболочка_Unix) - (комaндная оболочка Unix, часто просто «шелл» или «sh») — командный интерпретатор, используемый в операционных системах семейства Unix. В нем пользователь может либо давать команды операционной системе по отдельности, либо запускать скрипты, состоящие из списка команд. В MacOS и Linux стандартной командой оболочкой является bash (одна из разновидностей оригинального shell).
 
-Вот три разных пути ведущих к тому, чтобы понять как работать с bash:
+Вот 3 разных пути ведущих к тому, чтобы понять как работать с bash:
 
 ---
 
 ### 1.1 - Unix OS: Windows 10 subsystem for Linux ###
-Самый простой и удобный способ, чтобы открыть терминал и начать работу с Bash.
 1. Открываем Start menu в Windows 10 и ищем PowerShell, запускаем его от имени администратора
 2. Прописываем в PowerShell чтобы активировать Bash в Windows и настроить ее под себя:
 ```
@@ -19,7 +18,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 ---
 
-### 1.2 - Unix OS: Linux Ubuntu ###
+### 1.2 - Unix OS: VMware - Linux Ubuntu ###
 1. Скачиваем VMware (ищите на торрентах repack, могу лишь посоветовать nnm-club.ru).
 2. Скачиваем [Ubuntu Desktop](https://ubuntu.ru/get).
 3. Устанавливаем виртуалку в VMware, ничего сложного нету, главное выделите 20 гб свободного места.
@@ -31,7 +30,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 ---
 
-### 1.3 - Unix OS: macOS Sierra ###
+### 1.3 - Unix OS: VMware - macOS Sierra ###
 macOS Sierra - для тех, кто хочет понять с какой OS мы будем работать в школе.
 1) Образ macOS [Sierra v.10.12.5 (16F73)](https://nnmclub.to/forum/viewtopic.php?t=1151080)
 2) [Установка](https://youtu.be/WYkgtMEDUXQ) macOS Sierra VMWare Workstation 

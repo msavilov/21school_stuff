@@ -1,21 +1,21 @@
-# 4 - Code check #
+# 5 - Code check #
 Проверяем код на правильность.
 
-### 4.1 - Code check: Norminette ###
+### 5.1 - Code check: Norminette ###
 Проверка кода на соответствие нормам  
 Вне школы. Репозиторий [AzRunRCE](https://github.com/AzRunRCE/42-C-Norme)
    * Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
    * Установите ```sudo apt install mono-complete```, чтобы использовать .exe файлы на Linux через ```mono program.exe```.
    * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
-    ```alias norm="cd /mnt/d/Work/21school/21school_piscine-c/.debug/ && mono appRegex.exe && cd -"``` Затем перезапустите iTerm или Terminal и набирайте norm.    
+    ```alias norm="cd /mnt/d/Work/21school/21school_piscine-c/.debug/ && mono appRegex.exe && cd -"``` Затем перезапустите терминал и набирите norm.    
 
 В школе. Проверка файлов стандартной Norminette:
    * Для проверки использовать команду norminette -R CheckForbiddenSourceHeader в директ. с программой на с
    * Для проверки файлов типа *.h используется только norminette, без флагов
    * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
-   ```alias norm="norminette -R CheckForbiddenSourceHeader"```. Затем перезапустите iTerm или Terminal и набирайте norm.
+   ```alias norm="norminette -R CheckForbiddenSourceHeader"```. Затем перезапустите терминал и набирите norm.
 
-### 4.2 - Code check: 42Stupidity ###
+### 5.2 - Code check: 42Stupidity ###
 Компилирует, тестит (~Moulinette) и проверяет официальной Norminette (если вы залогинились в системе школы).
 1.	Клонируем репоз. в домашний каталог в новую папку 42Stupidity
 ```
@@ -50,7 +50,7 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 alias day02="./spawn.pl ../02_day02 config_d02.pl && ./tools/build.sh && ./tools/check_all.sh"
 ```
 
-### 4.3 - Code check: Towel ###
+### 5.3 - Code check: Towel ###
 Упрощает работу (на основе 42Stupidity), действие в одну команду.
 1. Клонируем репозиторий в домашний каталог в новую папку Towel
 ```
@@ -64,7 +64,7 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 3. Возможно понадобится сменить права доступа ```chmod +x towel.sh```
 4. Проверяем на Norminette, комплируем и тестим ```./towel.sh day05```
 
-### 4.4 - Code check: lifehack's
+### 5.4 - Code check: lifehack's
 1. В ~/.zshrc, компилируем с флагами и проверяем main.c
 ```
 alias main="gcc -Wall -Wextra -Werror main.c -o test && ./test"
