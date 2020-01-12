@@ -47,7 +47,7 @@ git clone vogsphere@vogsphere.21-school.ru:intra/2019/activities/piscine_c_day_0
 ```
 7. Мои alias, мне так проще, не вините меня. У меня просто в папке .debug все эти инструменты для проверки
 ```
-alias day02="./spawn.pl ../02_day02 config_d02.pl && ./tools/build.sh && ./tools/check_all.sh"
+alias day03="cd /mnt/d/Work/21school/21school_piscine-c/.debug && ./spawn.pl ../03_day03 config_d03.pl && ./tools/build.sh && ./tools/check_all.sh && cd -"
 ```
 
 ### 5.3 - Code check: Towel ###

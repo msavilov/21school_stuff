@@ -2,13 +2,16 @@
 
 ### 3.1 - Extensions ###
 Easy Code
-   * [Тема one-monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
+   * [Тема one-monokai / Monokai](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai)
    * [Color Highlight / #RGB](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
    * [Trailling spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
    * [SirTori / Выделяет текущую глубину отступа](https://marketplace.visualstudio.com/items?itemName=SirTori.indenticator)
    * [Умное выравнивание колонок](https://marketplace.visualstudio.com/items?itemName=lmcarreiro.vscode-smart-column-indenter)
    * [MultiColorHighlighter](https://marketplace.visualstudio.com/items?itemName=456ken.multicolorhighlighter)
    * [Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+   * [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+   * [C# Colors](https://marketplace.visualstudio.com/items?itemName=logerfo.csharp-colors)
+   * [TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
 Comment
    * [42 Header bind](https://marketplace.visualstudio.com/items?itemName=kube.42header)
