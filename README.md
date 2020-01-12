@@ -18,7 +18,8 @@
 
 #### Полезности ####
 * [Правила Школы 21 - Казань 2020](materials/21school_rules_kzn2020.md)
-* [FAQ Школы 21](https://docs.google.com/spreadsheets/d/1TdkoNjlj8RChC64Vi9igEjNY2q_sc_JMcunMk3oYywg/edit#gid=1558877365)  
+* [FAQ Школы 21](https://docs.google.com/spreadsheets/d/1TdkoNjlj8RChC64Vi9igEjNY2q_sc_JMcunMk3oYywg/edit#gid=1558877365)
+* Visualize C code execution to learn C online [C Tutor](http://pythontutor.com/c.html#mode=display)
 
 ---
 
