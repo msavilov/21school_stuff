@@ -3,17 +3,17 @@
 
 ### 5.1 - Code check: Norminette ###
 Проверка кода на соответствие нормам  
-Вне школы. Репозиторий [AzRunRCE](https://github.com/AzRunRCE/42-C-Norme)
-   * Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
-   * Установите ```sudo apt install mono-complete```, чтобы использовать .exe файлы на Linux через ```mono program.exe```.
-   * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
-    ```alias norm="cd /mnt/d/Work/21school/21school_piscine-c/.debug/ && mono appRegex.exe && cd -"``` Затем перезапустите терминал и набирите norm.    
-
 В школе. Проверка файлов стандартной Norminette:
    * Для проверки использовать команду norminette -R CheckForbiddenSourceHeader в директ. с программой на с
    * Для проверки файлов типа *.h используется только norminette, без флагов
    * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
    ```alias norm="norminette -R CheckForbiddenSourceHeader"```. Затем перезапустите терминал и набирите norm.
+
+Вне школы. Репозиторий [AzRunRCE](https://github.com/AzRunRCE/42-C-Norme)
+   * Уже готовый .exe 42-C-Norme/bin/Debug/appRegex.exe. Код перемещаем в файл My_app.c и запускаем exe.
+   * Установите ```sudo apt install mono-complete```, чтобы использовать .exe файлы на Linux через ```mono program.exe```.
+   * Альяс, который упрощает работу. В файле ~/.zshrc пропишите следующую строку (если файла ~/.zshrc нет то создайте его):
+    ```alias norm="cd /mnt/d/Work/21school/21school_piscine-c/.debug/ && mono appRegex.exe && cd -"``` Затем перезапустите терминал и набирите norm.
 
 ### 5.2 - Code check: 42Stupidity ###
 Компилирует, тестит (~Moulinette) и проверяет официальной Norminette (если вы залогинились в системе школы).
