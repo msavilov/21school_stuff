@@ -19,8 +19,9 @@
 
 ---
 
-| **Materials 00**                                                            | Перевод                                        | **Materials 01**                                                              | Перевод                                        |
+| Материалы                                                                   | Перевод                                        | Материалы                                                                     | Перевод                                        |
 |-----------------------------------------------------------------------------|------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------|
+| **Materials 00**                                                            |                                                | **Materials 01**                                                              |                                                |
 | cursus_manual.en                                                            | [ru](materials/cursus_manual.ru.md)            | video_12: [echo, cat, more](https://youtu.be/MrDA7LpFWJA)                     |                                                |
 | vogsphere-doc.en                                                            | [ru](materials/vogsphere-doc.ru.md)            | video_13: [head, tail, grep](https://youtu.be/hO1Z82kS6WE)                    |                                                |
 | the_art_of_peer_evaluation.en                                               | [ru](materials/the_art_of_peer_evaluation.md)  | video_14: [Redirections](https://youtu.be/jcKlDWjvrzI)                        |                                                |
