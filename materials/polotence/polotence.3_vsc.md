@@ -17,6 +17,7 @@ Comment
    * [42 Header bind](https://marketplace.visualstudio.com/items?itemName=kube.42header)
    * [Comment Anchors](https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors)
    * [Better Comment / через Ctrl+/](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.bettercomment)
+   * [Comment divider](https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider)
 
 GitHub Markdown
    * [Markdown All in One / для работы с .md](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
