@@ -4,10 +4,10 @@
 
 ### Переводы: основная документация и видеозаписи ###
 В данном разделе находятся переводы документации Школы 21.
-* [cursus_manual.ru](../materials/src/cursus_manual.ru.md)
-* [vogsphere-doc.ru](../materials/src/vogsphere-doc.ru.md)
-* [the_art_of_peer_evaluation.ru](../materials/src/the_art_of_peer_evaluation.ru.md)
-* [norme.ru](../materials/src/norme.ru.md)
+* [cursus_manual.ru](../materials/perevodi/cursus_manual.ru.md)
+* [vogsphere-doc.ru](../materials/perevodi/vogsphere-doc.ru.md)
+* [the_art_of_peer_evaluation.ru](../materials/perevodi/the_art_of_peer_evaluation.ru.md)
+* [norme.ru](../materials/perevodi/norme.ru.md)
 * [videos](https://www.youtube.com/playlist?list=PLnI5O9CyX5MFaOvTB1EWSHFC7EzB61UIp)
   * Пока субтитры не готовы, есть лишь на некоторых видео.
   * Для каждого видео я включил настройку "помощь сообщества". Это означает, что вы можете предложить сами свои      варианты переводов, которые будут опубликованы в субтитрах к видео (У других стран есть, а у нас нет!? Тогда построим свой собственный перевод, с блекджеком и матрешками).
