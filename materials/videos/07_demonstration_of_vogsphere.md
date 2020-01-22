@@ -1,145 +1,162 @@
-Теперь, когда вы прочли всю документацию, по крайней мере, я надеюсь, что вы ее прочитали, мы сможем обсудить эту тему.
 > Acum ca ati citit cu totii documentia, cel putin sper ca ati facut-o, vom putea intra in subiect.
+Теперь, когда вы все прочитали документацию, по крайней мере, я надеюсь, что вы это сделали, мы сможем перейти к этой теме.
 
-> Now that you have all read the documentation, at least I hope you did, we will be able to get into the subject.
-
-translateme
 > Inainte de asta, doua-trei mici chestiuni.
+А перед этим, еще пара вещей.
 
-translateme
 > In primul rand, sunt mai multe moduri de a folosi GIT.
+Во-первых, есть несколько способов использования GIT.
 
-translateme
 > Cum ati vazut in documentatie, putem de exemplu sa cream un repository in local pe statia de lucru, putem sa copiem un repository de pe statia de lucru a unui coleg, putem clona un repository de pe propria statie de lucru, sau sa clonam unul de pe un server central, iar apoi sa trimitem acolo modificarile.
+Как вы уже видели в документации, мы можем, например, создать локальный репозиторий на Mac, можем скопировать репозиторий с компьютера друзей, я могу клонировать локально репозиторий с моего компьютера или мы можем клонировать репозиторий с главного сервера, а затем отправить изменения туда.
 
-translateme
 > lar noi asta vom face.
+И этим мы сейчас и займемся.
 
 translateme
 > Exista un server, numit Vogsphere, care se va ocupa sa creeze pentru voi cate un repository in momentul in care va inscrieti pentru un proiect, si care va va comunica adresa acestuia prin intermediul intranetului.
+There is a server, called Vogsphere, that will create a repository for you when you sign up for a project, and that will communicate your address via the intranet.
 
-translateme
+Этот главный сервер называется "Vogsphere", который автоматически будет создавать репозиторий для вас, когда вы будете регистрироваться на проект, адрес на этот репозиторий будет виден в intranet'e.
+
 > Voi veti merge pe intranet si veti recupera adresa, veti clona acel repository, veti lucra cu el, iar apoi veti trimite modificarile spre Vogsphere.
+Вы просто берете и заходите в intranet, получаете адрес, клонируете этот репозиторий, а потом отправляете изменения в "Vogsphere".
 
-translateme
 > Vom vedea detaliile mai tarziu.
+Более подробно мы разберем это позже.
 
-translateme
 > De asemenea, vorbind de adresa (URL), veti vedea ca eu voi folosi o adresa care pare inventata.
+Also, speaking of the address (URL), you will see that I will use an address that seems invented.
 
-translateme
+Также, говоря об адресе (URL), который я буду использовать в видео, если вам покажется он придуманным,
+
 > Dar nu e asa, va asigur, doar ca eu cunosc deja adresa, iar voi nu o veti stii si veti merge in intranet pentru a recupera adresa repository-ului vostru de fiecare data cand veti avea un nou proiect.
 
-translateme
+но это не так, уверяю вас, просто я уже знаю адрес, а вы нет и будете заходить в интранет для получения вашего адреса вашего репозитория каждый раз, когда у вас будет новый проект.
+
+
 > Acum trecem la terminal si incepem cu inceputul, dica “git clone".
+Now we go to the terminal and start with the beginning, say "git clone".
+Теперь мы заходим в терминал и начнем все с начала, напишем "git clone".
 
-translateme
 > Pentru “git clone” trebuie sa precizam serverul de unde vrem sa recuperam repozitory-ul, aici “vogsphere@vogsphere.42.fr”, urmat de (doua puncte) si numele repository-ului, asa cum il primiti pe intranet Inca o data, pare inventat, dar nu e, voi il veti vedea pe intranet.
+Для использования команды "git clone" нам нужно указать сервер, на котором находится наш репозиторий, здесь это "vogsphere@vogsphere.42.fr", затем две точки (:) и имя (путь) репозитория, который вы должны получить в intranet.
 
-translateme
+
 > In orice caz, are mereu aceeasi forma: cod modul / anul scolar / cod instanta / activitate / login-ul sefului grupului.
+In any case, it always has the same form: module code / school year / instance code / activity / login of the group leader.
 
-translateme
+В любом случае, он всегда имеет одну и ту же форму: код модуля / учебный год / код деятельности / код логина лидера группы.
+
 > Seful unui grup format dintr-o pesona este evident acea persoana.
 
-translateme
+Будучи в группе 1, логично подумать, что я и есть лидер своей собственной группы.
+
 > La final obsevat ca tastez “jOO”, pentru a face clona in dosarul local “jOO”, altfel, clona se va face in dosarul personal, lucru care nu este elegant, iar de indata ce voi incerca sa fac o clona, git nu va suprascrie clona anterioara ci va da mesajul ca nu se poate face pentru ca acea clona exista deja.
 
-translateme
+Заметьте, что в конце я пишу "j00", чтобы сделать клон в локальной папке "j00", если этого не сделать, то клон папки будет сделан в домашнем каталоге, и это мягко говоря "неоч", т.к. как только я попытаюсь сделать клон, git не перезапишет предыдущий клон, а выдаст сообщение, по типу "вы не можете этого сделать, потому что этот клон уже существует".
+
 > Ca atare, puneti intotdeauna un nume de dosar pentru clona la final.
+Поэтому, всегда именуйте клонируемый репозиторий.
 
-translateme
 > De asemenea, pentru a va ajuta sa castigati timp, va arat si niste scurtaturi care simplifica viata.
+Чтобы помочь вам сэкономить время, я покажу вам несколько сокращений, которые упростят вашу жизнь.
 
-translateme
 > Partea de inceput, inainte de cele doua puncte, nu e obligatoriu sa fie scrisa complet, ci puteti folosi “vogsphere.42.fr:...” sau chiar “vgs.42.fr:...”, alt nume scurt pentru Vogsphere.
+Во-первых, необязательно писать полностью адрес перед двумя точками (:) "vogsphere.42.fr:...", достаточно написать альтернативный сокращенный адрес "vgs.42.fr:..." для Vogsphere.
 
-translateme
 > Sau puteti face ca mine, care sunt foarte foarte comod: "vgs:...".
+Или вы можете делать, как я, т.к. я очень ленивый: "vgs:..."
 
-translateme
 > Asta merge foarte bine si asa voi face in aceasta demonstratie.
+Мне это сокращение очень подходит и пожалуй я им воспользуюсь для демонстрации.
 
-translateme
 > Daca voi veti intampina vreo problema cu asta, utilizati forma completa.
+Если у вас возникнут проблемы с этим, то используйте полный путь.
 
-translateme
 > Acum voi face “git clone” si dupa cum vedeti primim o multime de mesaje.
+Теперь я воспользуюсь командой "git clone", и как вы можете видеть я получаю очень много сообщений в процессе.
 
-translateme
 > Nu va ingrijorati, nu sunt mesaje de eroare.
+Не переживайте, это не ошибки.
 
-translateme
 > Atata timp cat nu apare termenul “error” nu este vorba de o eroare.
+До тех пор, пока "error" не появится, ошибок там не будет.
 
-translateme
 > In acest caz, ceea ce imi spune este data la care a inceput operatiunea, si anume ora 17:33 din data 26 iunie 2013.
+В данном случае, что он мне показывает, так это дату начала операции, а именно 17:33 26 июня 2013 года.
 
-translateme
 > Asta va va folosi mai tarziu, dupa cum vom vedea la finalul acestui exemplu.
+Мы воспользуемся этим позже, я объясню вам это сразу же, как закончу с примером.
 
-translateme
+
 > In orice caz, nu va alarmati, este perfect normal.
+В любом случае, не паникуйте, это нормально.
 
-translateme
 > Acum pot intra in dosarul “jOO” care va fi dosarul meu de lucru, adica este copia locala a repository-ului.
+Теперь я перейду в папку "j00", чтобы начать работу со своими файлами, то есть копией локального репозитория.
 
-translateme
 > Voi face modificari in dosar, de exemplu voi crea un fisier “test.c”, in care voi scrie o functie "main()", care nu face nimic, dar nu e important acum.
+Я создам файл, например, "test.c", в котором запишу функцию "main()", которая ничего не делает, но сейчас это не важно.
 
-translateme
 > II salvez si pentru ca “git” sa-l ia in considerare, trebuie sa-i spunem ca suntem interesati de acest fisier.
+Мы сохраним его, и чтобы "git" считал его, мы должны сказать ему, что мы заинтересованы в этом файле.
 
-translateme
 > Putem verifica cu “git status” pentru a vedea ca in acest moment nu va face nimic daca lansez un “commit”.
+Мы можем проверить командой "git status", чтобы увидеть, какие файлы были взяты во внимание. Если я напишу "commit", git ничего не сделает.
 
-translateme
 > Imi spune ca exista un fisier “test.c”, dar care nu este luat in considerare (“untracked”) pentru moment de “git”.
+"git status" говорит мне, что есть файл "test.c", но он не учитывается ("непроиндексирован") для "git" в данный момент.
 
-translateme
 > Pentru a-l lua in considerare, tastez “git add test.c”.
+Чтобы проиндексировать этот файл, введите "git add test.c".
 
-translateme
 > Putem vedea cu “git status” acum ca, fisierul este in lista de modificari ce vor fi incluse in commit-ul urmator.
+Теперь мы можем увидеть в "git status", что этот файл находится в списке изменений, которые будут включены в следующий "commit".
 
-translateme
 > Pot face un “git commit”.
+Теперь я воспользуюсь командой "git commit"
 
-translateme
 > Parametrul “-m” imi permite sa precizez un mesaj de commit direct in linia de comanda.
+с параметром "-m", который позволяет указать "commit"у сообщение, которое я пропишу в коммандой строке.
 
-translateme
 > Nu sunt obligat sa-l folosesc, dar eu o fac pentru ca nu am chef sa folosesc editorul pentru asta.
+I dont have the right one, but I'am going to do it right now, because I'am too lazy to open a header.
 
-translateme
 > Asadar, “git commit” imi reia mesajul “Creation de test.c”, si a facut un commit cu crearea fisierului de test.
+Итак, «git commit» резюмирует мое сообщение «Creation de test.c» и создает "commit" с созданием test.c файла.
 
-translateme
 > Daca verificam acum cu “git status” putem vedea ca acum nu mai este nimic pregatit pentru un nou commit.
+Если мы проверим сейчас «git status», то увидим, что сейчас нет файлов, которые можно за"commit"тить.
 
-translateme
 > Pot face alte modificari, de exemplu pot schimba fisierul “test.c” pentru a adauga un “ft_putchar(‘f)”, inainte de “return”, iar acum imi spune ca, desi e vorba de un fisier care e luat in considerare, este o modificare ce nu este pregatita pentru “commit”.
+Я могу внести некоторые изменения, например я хочу изменить файл «test.c», чтобы добавить туда «ft_putchar()» перед «return»,и теперь он говорит мне, что этот файл непроиндексирован и является модификацией (он изменен), которая не готова для "commit"а.
 
-translateme
 > Asta pentru ca, de fiecare data cand facem o modificare, trebuie sa-i spunem explicit ca ne intereseaza.
+Каждый раз, когда вы делаете изменения, вы должны сказать git'у, какие файлы вы хотите проиндексировать.
 
-translateme
 > Tastez “git add test.c” si apoi refac un “git commit” cu mesajul de rigoare.
+Введите «git add test.c» и затем напишите «git commit» с соответствующим сообщением.
 
-translateme
 > Mesajele de commit pe care le folosesc aici sunt desigur reduse, dar voi in proiectele reale ar trebui sa puneti mesaje mai lungi si semnificative pentru a va orienta mai usor in istoric.
+commit сообщение, которые я здесь напишу, конечно, сокращено, но в реальных проектах вы должны писать более развернутые и более значимые сообщения, чтобы вам было легче ориентироваться в истории commit'ов.
 
-translateme
 > Asadar, am facut mai multe commit-uri, ceea ce e foarte dragut, dar acum, trebuie sa le propagam spre serverul distant.
+Итак, мы сделали несколько коммитов, что очень хорошо и теперь мы должны отправить их на удаленный сервер.
 
-translateme
 > Pentru moment, commit-urile sunt doar la mine in local, iar Vogsphere nu le cunoaste absolut deloc.
+На данный момент, коммиты являются локальными, и Vogsphere о них не знает.
 
 translateme
 > Pentru a face asta, asa cum ati vazut in documentatie, utilizam “git push” pentru a trimite modificarile spre serverul distant.
+To do this, as you saw in the documentation, we use "git push" to send the changes to the remote server.
 
-translateme
+Как мы уже знаем, чтобы отправить изменения на удаленный сервер, мы используем команду "git push".
+
+
 > Vom putea folosi mai tarziu “git pull” pentru a recupera modificari de pe serverul distant.
+
+Позже у нас будет возможность использовать "git pull", чтобы получить изменения с удаленного сервера.
 
 translateme
 > Acum facem un “git push”.

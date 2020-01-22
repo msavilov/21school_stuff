@@ -3,10 +3,14 @@
 ---
 
 > Buna ziua tuturor si bun venit
+Hello everyone and welcome
+
 
 > la acest video de introducere pe tema “Vogsphere”.
+At this video introduction on the topic \"Vogsphere\".
 
 > Deoarece va vom bate la cap despre tema asta timp de trei ani, ar fi interesant sa stiti despre ce e vorba.
+Because we're going to bother you about this assignment for three years, it would be interesting to know what it's all about.
 
 > Ei bine, in afara de a fi planeta de origine a Vogonilor din excelenta carte “Ghidul autostopistului intergalactic” a lui Douglas Adams, pe care, apropo, daca nu ati citit-o, va recomandam sa o faceti, in plus, este un sistem foarte important pentru scoala 42, fiind sistemul de centralizare al rezultatelor muncii voastre, adica e sistemul prin care veti trimite spre evaluare practic toate proiectele realizate, cu exceptia doar a doua-trei proiecte care vor avea rezultate mai ezoterice.
 
