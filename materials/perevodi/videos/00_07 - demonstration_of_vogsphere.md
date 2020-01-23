@@ -147,79 +147,93 @@ commit сообщение, которые я здесь напишу, конеч
 > Pentru moment, commit-urile sunt doar la mine in local, iar Vogsphere nu le cunoaste absolut deloc.
 На данный момент, коммиты являются локальными, и Vogsphere о них не знает.
 
-translateme
 > Pentru a face asta, asa cum ati vazut in documentatie, utilizam “git push” pentru a trimite modificarile spre serverul distant.
-To do this, as you saw in the documentation, we use "git push" to send the changes to the remote server.
-
 Как мы уже знаем, чтобы отправить изменения на удаленный сервер, мы используем команду "git push".
 
-
 > Vom putea folosi mai tarziu “git pull” pentru a recupera modificari de pe serverul distant.
-
 Позже у нас будет возможность использовать "git pull", чтобы получить изменения с удаленного сервера.
 
 translateme
 > Acum facem un “git push”.
+Теперь делаем "git push".
 
 translateme
 > Daca fac operatia acum imediat, nu va functiona, pentru un motiv foarte simplu, si anume ca la primul “push” trebuie sa precizam, care e destinatia, aici “origin”, si care e branch-ul pe care vrem sa il trimitem, aici “master”.
+Если я прямо сейчас сделаю "git push", то ничего не сработает, по очень одной простой причине, при первом "push" нам нужно указать git'у место назначения, которым будет "origin", а также ветку "master", на которую мы хотим отправить
 
 translateme
 > Daca nu intelegeti nu e foarte grav, trebuie doar sa stiti ca pentru primul “push” trebuie folositi “git push origin master”, iar in continuare doar “git push”.
+Не переживайте, если не поняли, просто запомните, что в первый раз мы пишем "git push origin master" и потом мы пишем только "git push"
 
 translateme
 > Mesajul primit imi spune ca am trimis un nou brach “master” in repository.
+В сообщении, которое я получил, говорится, что я отправил в новую ветку "master" в моем репозитории, что есть хорошо.
 
 translateme
 > Inca ceva important: opreratia “git push” nu se face doar o data si gata, ci puteti face “push” de cate ori doriti, nu este nici o problema.
+Еще один важный момент: использование команды "git push" не будет выполняться единожды, вы можете ее использоваться столько раз, сколько захотите.
 
 translateme
 > De exemplu pot sa creez un fisier “text.txt” cu un continut oarecare, pot sa-l adaug la un commit, sa fac commit-ul si apoi sa refac un “git push”.
+К примеру, я могу создать файл "text.txt" с всякой херней внутри, я могу добавить его в "commit", выполнить "commit", а затем сделать "git push".
 
 translateme
 > De data aceasta nu mai e nevoie sa precizez “origin master”, iar git trimite fisierele mele spre Vogsphere.
+На этот раз мне не надо указывать "origin master" и git отправит мои файлы на Vogsphere.
 
 translateme
 > Acestea fiind zise, s-ar putea sa aveti indoieli despre succesul operatiei “git push”.
+Тем не менее, у вас могут быть сомнения в успехе выполнения команды "git push".
 
 translateme
 > Pentru a verifica ce s-a trimis, e suficient sa faceti o noua clona a repository-ului cu “git clone”, doar ca in loc sa folosim numele “jOO”, folosim de exemplu “jOO-verif’.
+Чтобы проверить, что именно было отправлено на сервер, достаточно сделать новый клон репозитория с "git clone", просто, вместо имени "jOO" мы напишем, например, "jOO-verif".
 
 translateme
 > Mergeti apoi in noua clona, si tot ce gasiti aici este exact ceea ce se gaseste pe serverul Vogsphere.
+Затем заходим в репозиторий, который мы склонировали, и все, что вы найдете там, будет находиться в репозитории на сервере Vogsphere.
 
 translateme
 > Continutul va fi de altfel ceea ce va gasi corectorul, fie el uman sau automat, pentru notare.
+Содержимое вашего репозитория также могут быть собраны для проверки, не важно кто именно будет проверять, человек это или Moulinette.
 
 translateme
 > Insist pe acest lucru: doar ceea ce se gaseste pe Vogsphere va fi corectat.
+Еще раз хочу подчеркнуть: проверенными будут только те файлы, которые будут находиться на Vogsphere, если там будет находиться что-то еще или вы забыли что-то загрузить, то проверять это не будут.
 
 translateme
 > Orice altceva, daca ati uitat sa trimiteti spre server, nu conteaza, nu va fi notat.
 
 translateme
 > Fiti foarte atenti la acest lucru.
+Будьте аккуратнее с этим.
 
 translateme
 > Am terminat cu asta, am facut multe operatii pentru a explica lucruri foarte simple.
+Теперь, когда со всем этим закончили, ощущение такое, что я рассусоливаю вам такие простые вещи, поэтому время для маленького примера, без пустой болтавни, чтобы показать, как все это работает.
 
 translateme
 > Acum voi reface un mic exemplu succint, pentru a putea vedea fara complicatii parazite cum functioneaza sistemul.
 
 translateme
 > Reiau de la inceput.
+И так, начнем все сначала.
 
 translateme
 > Prima data folosim “git clone”.
+Сперва делаем "git clone".
 
 translateme
 > Clonam deci repository-ul de pe Vogsphere, specificand destinatia clonei, aici “jOO”.
+Итак, мы склонировали репозиторий из Vogsphere, указав место назначения клона, тут это "jOO".
 
 translateme
 > Intru in dosar, voi face niste operatii, voi crea un fisier “tata.txt” in care scriu “toto".
+Я захожу в эту новую папку, создаю файлы.
 
 translateme
 > Adaug fisierul cu “git add”, facem commit pentru a crea o versiune revizuita cu “git commit”, cu mesaje care ar fi bine sa fie mai explicite decat in acest exemplu, iar apoi impingem (“push”) modificarile spre server cu “git push”.
+Мы добавляем файлы через "git add", потом включаем их через "git commit"
 
 translateme
 > O data ce am facut asta, e gata, modificarea pe care am facut-o e inregistrata pe serverul Vogsphere.
