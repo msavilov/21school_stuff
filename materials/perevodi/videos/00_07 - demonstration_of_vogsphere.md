@@ -153,228 +153,220 @@ commit сообщение, которые я здесь напишу, конеч
 > Vom putea folosi mai tarziu “git pull” pentru a recupera modificari de pe serverul distant.
 Позже у нас будет возможность использовать "git pull", чтобы получить изменения с удаленного сервера.
 
-translateme
 > Acum facem un “git push”.
 Теперь делаем "git push".
 
-translateme
 > Daca fac operatia acum imediat, nu va functiona, pentru un motiv foarte simplu, si anume ca la primul “push” trebuie sa precizam, care e destinatia, aici “origin”, si care e branch-ul pe care vrem sa il trimitem, aici “master”.
 Если я прямо сейчас сделаю "git push", то ничего не сработает, по очень одной простой причине, при первом "push" нам нужно указать git'у место назначения, которым будет "origin", а также ветку "master", на которую мы хотим отправить
 
-translateme
 > Daca nu intelegeti nu e foarte grav, trebuie doar sa stiti ca pentru primul “push” trebuie folositi “git push origin master”, iar in continuare doar “git push”.
 Не переживайте, если не поняли, просто запомните, что в первый раз мы пишем "git push origin master" и потом мы пишем только "git push"
 
-translateme
 > Mesajul primit imi spune ca am trimis un nou brach “master” in repository.
 В сообщении, которое я получил, говорится, что я отправил в новую ветку "master" в моем репозитории, что есть хорошо.
 
-translateme
 > Inca ceva important: opreratia “git push” nu se face doar o data si gata, ci puteti face “push” de cate ori doriti, nu este nici o problema.
 Еще один важный момент: использование команды "git push" не будет выполняться единожды, вы можете ее использоваться столько раз, сколько захотите.
 
-translateme
 > De exemplu pot sa creez un fisier “text.txt” cu un continut oarecare, pot sa-l adaug la un commit, sa fac commit-ul si apoi sa refac un “git push”.
 К примеру, я могу создать файл "text.txt" с всякой херней внутри, я могу добавить его в "commit", выполнить "commit", а затем сделать "git push".
 
-translateme
 > De data aceasta nu mai e nevoie sa precizez “origin master”, iar git trimite fisierele mele spre Vogsphere.
 На этот раз мне не надо указывать "origin master" и git отправит мои файлы на Vogsphere.
 
-translateme
 > Acestea fiind zise, s-ar putea sa aveti indoieli despre succesul operatiei “git push”.
 Тем не менее, у вас могут быть сомнения в успехе выполнения команды "git push".
 
-translateme
 > Pentru a verifica ce s-a trimis, e suficient sa faceti o noua clona a repository-ului cu “git clone”, doar ca in loc sa folosim numele “jOO”, folosim de exemplu “jOO-verif’.
 Чтобы проверить, что именно было отправлено на сервер, достаточно сделать новый клон репозитория с "git clone", просто, вместо имени "jOO" мы напишем, например, "jOO-verif".
 
-translateme
 > Mergeti apoi in noua clona, si tot ce gasiti aici este exact ceea ce se gaseste pe serverul Vogsphere.
 Затем заходим в репозиторий, который мы склонировали, и все, что вы найдете там, будет находиться в репозитории на сервере Vogsphere.
 
-translateme
 > Continutul va fi de altfel ceea ce va gasi corectorul, fie el uman sau automat, pentru notare.
-Содержимое вашего репозитория также могут быть собраны для проверки, не важно кто именно будет проверять, человек это или Moulinette.
+Содержимое вашего репозитория также может быть взято для проверки, не важно кто именно будет проверять, человек это или Moulinette.
 
-translateme
 > Insist pe acest lucru: doar ceea ce se gaseste pe Vogsphere va fi corectat.
 Еще раз хочу подчеркнуть: проверенными будут только те файлы, которые будут находиться на Vogsphere, если там будет находиться что-то еще или вы забыли что-то загрузить, то проверять это не будут.
 
-translateme
 > Orice altceva, daca ati uitat sa trimiteti spre server, nu conteaza, nu va fi notat.
 
-translateme
 > Fiti foarte atenti la acest lucru.
 Будьте аккуратнее с этим.
 
-translateme
 > Am terminat cu asta, am facut multe operatii pentru a explica lucruri foarte simple.
 Теперь, когда со всем этим закончили, ощущение такое, что я рассусоливаю вам такие простые вещи, поэтому время для маленького примера, без пустой болтавни, чтобы показать, как все это работает.
 
-translateme
 > Acum voi reface un mic exemplu succint, pentru a putea vedea fara complicatii parazite cum functioneaza sistemul.
 
-translateme
 > Reiau de la inceput.
 И так, начнем все сначала.
 
-translateme
 > Prima data folosim “git clone”.
 Сперва делаем "git clone".
 
-translateme
 > Clonam deci repository-ul de pe Vogsphere, specificand destinatia clonei, aici “jOO”.
-Итак, мы склонировали репозиторий из Vogsphere, указав место назначения клона, тут это "jOO".
+Итак, мы склонировали наш репозиторий с репозитория на Vogsphere, указав место назначения клона, тут это "jOO".
 
-translateme
 > Intru in dosar, voi face niste operatii, voi crea un fisier “tata.txt” in care scriu “toto".
-Я захожу в эту новую папку, создаю файлы.
+Я захожу в эту новую папку, создаю там файлы.
 
-translateme
 > Adaug fisierul cu “git add”, facem commit pentru a crea o versiune revizuita cu “git commit”, cu mesaje care ar fi bine sa fie mai explicite decat in acest exemplu, iar apoi impingem (“push”) modificarile spre server cu “git push”.
-Мы добавляем файлы через "git add", потом включаем их через "git commit"
+Мы добавляем файлы через "git add", потом включаем их через "git commit", делаю commit файлов, чтобы создать новую версию с командой "git commit" с более развернутым сообщением, чем в моем примере, а затем мы делаем push на сервер, через команду "git push".
 
-translateme
 > O data ce am facut asta, e gata, modificarea pe care am facut-o e inregistrata pe serverul Vogsphere.
+Теперь, после того, как я все это сделал, все мои изменения теперь будут в папке на сервере Vogsphere.
 
-translateme
 > lar daca vreau sa verific acest lucru, pot sa fac o noua clona “jOO-verif’, cum fac aici, si sa intru in dosar pentru e vedea ca regasesc tot continutul.
+И если я захочу в этом убедиться, я могу сделать новый клон "j00-verif", такойже как и тут и зайти в него, чтобы проверить и убедиться, что все находится на своих местах.
 
-translateme
 > Folosind “cat tata.txt” vad ca regasesc ce am scris in fisier.
+И через команду "cat tata.txt" увидеть, что текст находится там и все хорошо.
 
-translateme
 > Nu este nici o problema, totul este in repository, deci am trimis corect spre server modificarile.
+Проблем никаких нет, все находится в репозитории, а значит я правильно отправил все изменения на сервер.
 
-translateme
 > Acestea fiind zise, inca doua-trei informatii destul de importante.
+Еще немного важных моментов, о которых вам нужно знать.
 
-translateme
 > In primul rand, asa cum am precizat mai inainte, corectorul automat, si nu doar el, ci si corectorul uman, nu va lua in considerare decat ceea ce gaseste pe Vogsphere.
+Во-первых, как я уже сказал, Moulinette и также ваш проверяющий, когда будут проверять, то будут учитывать только те файлы, которые будут находиться в репозитории на Vogsphere.
 
-translateme
 > Daca vreodata veti spune ca ati utiat sa trimiteti anumite modificari pe server, nu se va lua in considerare.
+If you ever say that you failed to send certain changes to the server, it will not be considered.
+И если вы скажете "даа, я забыл отправить это на сервер", то это трюк не сработает,
 
-translateme
 > Nu se admite nici o scuza, se corecteaza doar ceea ce este pe server.
+никаких исключений, только то содержимое, которое находится в вашем репозитории на сервере будет проверено.
 
-translateme
 > O repet de multe ori si stiu ca devine obositor, dar e foarte foarte important.
+Я знаю, что я часто повторяюсь и что вас это утомляет, но это очень, очень и очень важно.
 
-translateme
 > E esential sa nu suferiti din cauza unei astfel de erori.
+Вы должны быть абсолютно уверены, что не допустите эту ошибку.
 
-translateme
 > De asemenea, cand veti lucra in grup, (eu am facut exemplul singur si asta e foarte usor), dar in grup va veti lovi de problema sincronizarii versiunilor intre membrii grupului.
+Также, когда вы будете работать в группе, (тут я конечно делал все в одиночку и это прекрасно), но в группе вы столкнетесь с проблемой синхронизации версий между членами группы.
 
-translateme
 > Asta se rezolva foarte simplu cu ajutorul comenzii “git pull”, despre care nu va voi spune acum mai multe pentru ca o gasiti in documentatie ca sa stiti cum se foloseste.
+Это все легко решить с командой "git pull" и больше я ничего не добавлю т.к. вам нужно самим прочесть документацию, если вы захотите узнать побольше об этом.
 
-translateme
 > In al doilea rand, serverul Vogsphere are limitare la dimesniunea fiecarui repository, limita fiind de 100MB.
+Во-вторых, на сервере Vogsphere есть ограничение по допустимому размеру для всех репозиториев, ограничение составляет 100MB.
 
-translateme
 > In mod normal nu ar trebui nici macar sa va apropiati de aceasta limita, dar daca veti incepe sa puneti multe lucruri in repository, aveti grija sa nu depasiti limita, deoarece a trece de 100MB e considerat o utilizare abuziva a resurselor, iar astfel de abuzuri se sanctioneaza destul de sever, asa ca va recomand sa nu ajungeti in astfel de situatii.
+Как правило, не стоит даже приближаться к этому лимиту, но если вы начинаете добавлять очень много вещей в репозиторий, то такие злоупотребления наказываются достаточно строго, поэтому я рекомендую вам не попадать в такие ситуации. Будьте осторожны и не превышайте лимит, так как превышение 100MB считается нецелевым использованием ресурсов.
 
-translateme
 > Sa continuam.
+Продолжим.
 
-translateme
 > Ati putut observa mai devreme ca atunci cand am utilizat “git clone”, (refac operatia ca sa vedeti mai bine), am un mesaj care imi spune ca operatia a inceput la o anumita data.
+Вы наверное уже заметили, что когда я использовал команду "git clone" (выполню ее еще раз, чтобы вы еще раз увидели), то я получаю сообщение о том, что операция началась в определенное время.
 
-translateme
 > Acesta precizeaza data pe care serverul o ia in considerare pentru a determina daca mai aveti sau nu dreptul de a scrie in repository.
+Сервер будет учитывать это время / дату, чтобы определить, имеете ли вы право на запись файлов в репозиторий или нет.
 
-translateme
 > Fiecare proiect are data limita de predare, iar din momentul expirarii acestui termen, cu precizie de secunda, nu veti mai avea dreptul sa faceti “push” cu nimic spre repository-ul proiectului.
+У каждого проекта будет дедлайн и по истечении крайнего срока, с точностью до секунды, у вас больше не будет прав на push чего-либо в репозиторий проекта на основном сервере.
 
-translateme
 > Aceasta data e folosita ca garantie, in cazul in care va conectati la server pentru a face “push” cu doar cateva secunde inainte de expirarea termenului, si pentru a sti ca operatia a inceput de exemplu la ora 23, 41 de minute si 50 de secunde.
+Эта дата используется в качестве гарантии, в случае, если вы подключитесь к серверу, чтобы сделать "push" всего за несколько секунд, до истечении крайнего срока и убедиться, что операция началась, например в 23:41:50.
 
-translateme
 > Deci, chiar daca operatiunea dureaza foarte mult (de exemplu daca ceilalti 1000 de colegi ai vostri se conecteaza pentru a face “push” in acelasi timp, putin probabil, dar chiar si in acest caz), ora care determina daca aveti acces este cea de inceput, adica ora din mesaj.
+И даже если выполнение самой операции будет идти очень долго, например, если 1000 других ваших коллег подключатся и сделают push одновременно, что маловероятно, но даже в этом случае, время, которое было зафиксировано в сообщении, оно определяет, есть ли у вас доступ на запись файлов.
 
-translateme
 > Ca atare, chiar daca operatia “push” dureaza 5 minute si se termina la ora 23 si 46 de minute, in timp ce ora limita este 23 si 42 de minute, nu e grav, pentru ca a inceput inainte de ora limita.
+Даже если выполнение "push" длится уже 5 минут и выполнится он в 23:42, в то время, как 23:42 это крайний срок, не важно, вы выполнили команду до 23:42, важно только то, что у вас был доступ к выполнению команды push, чтобы закончить проект.
 
-translateme
 > Ceea ce conteaza este sa nu intrerupeti conexiunea.
+Самое главное не прерывать соединение.
 
-translateme
 > Daca intrerupeti cu “ctrl-C” si vreti sa reluati, poate ca ora limita a trecut deja si veti fi blocati.
+Don't push "ctrl-C" to cancel a clone while cloning it either, because if you restart cloning, maybe the time limit will now have expired and nothing will save you.
 
-translateme
+Если вы прервёте клонирование с помощью "ctrl-C" и захотите его возобновить, то возможно срок подачи уже истечет и вас уже ничего не спасет.
+
 > De asemenea, veti observa poate, daca sunt multe conexiuni in acelasi timp, ca veti avea un mesaj cum ca sunteti in coada de astepare dupa ce lansati comanda.
+Также, вы можете заметить, что при наличии множества соединений одновременно, у вас будет сообщение о том, что вы находитесь в очереди, после отправки вашего запроса.
 
-translateme
 > Din nou, nu e grav, dar sa nu intrerupeti conexiunea.
+Не паникуйте и не прерывайте соединение.
 
-translateme
 > Serverul va spune ca e suprasolicitat si ca trebuie sa asteptati.
+Сервер скажет вам, что он перегружен, и что вы должны подождать.
 
-translateme
 > Veti fi informati periodic cu numarul de persoane din fata voastra in coada.
+Вас будут периодически информировать о количестве людей перед вами в очереди, на отправку запроса.
 
-translateme
 > Inca o data, nu va alarmati, e perfect normal, trebuie sa asteptati.
+Опять же, не волнуйтесь, это совершенно нормально, просто немного подождите.
 
-translateme
 > Inca doua-trei informatii de final.
+И еще кое-что на последок.
 
-translateme
 > Identificarea pe server se face cu ceea ce numim ticket “Kerberos".
+Идентификация на сервере выполняется через тикеты "Kerberos".
 
-translateme
 > II primiti in mod automat cand va conectati pe statia voastra de lucru.
+Вы будете автоматически их получать, когда будете логиниться на компьютере.
 
-translateme
 > Dar, asa cum va veti da seama la un moment dat, ticketele Kerberos expira, deci trebuie reinnoite din cand in cand.
+Но в какой-то момент вы поймете, что тикеты имеют истекают по времени, поэтому, время от времени, их надо будет обновлять.
 
-translateme
 > Daca vreti sa verificati ca aveti un ticket Kerberos valid, puteti folosi comanda “klist”, care va lista ticketele voastre.
+Если вы хотите проверить, что у вас сейчас действительный Kerberos тикет, то вы можете воспользоваться командой "klist", которая покажет вам ваши тикеты.
 
-translateme
 > De exemplu eu am aici un ticket Kerberos care expria in 27 iunie 2013 la ora 3 dimineata.
+Например, у меня есть тикет, который истечет 27 июня 2013 года в 3 часа утра.
 
-translateme
 > II voi distruge in mod intentionat pentru a vedea ce se intampla daca nu-l avem.
+Сейчас я намеренно уничтожу их, чтобы посмотреть, что произойдет, если у меня их не будет.
 
-translateme
 > Execut “kdestroy” si dupa cum vedeti nu mai am nici un ticket.
+Выполняем команду "kdestroy" и как вы видите, у меня нет тикетов.
 
-translateme
 > Acum, daca incerc sa execut “git clone”, imi va da un mesaj de acces interzis (“permission denied”).
+Теперь, если я попытаюсь использовать команду "git clone", то мне выдаст сообщение ("permission denied").
 
-translateme
 > Utilizez comanda “kinit” cu numele de utilzator si parola mea, pentru a obtine un ticket nou.
+Теперь воспользуюсь командой "kinit" с моим логином и паролем, чтобы получить новый тикет.
 
-translateme
 > Cu “klist” verifc faptul ca am un ticket, iar acum pot sa execut “git clone”, operatie care va functiona fara nici o problema.
+С помощью "klist" я проверю, есть ли у меня тикет, и теперь я могу выполнить команду "git clone", которая будет работать без проблем.
 
-translateme
 > Asadar, daca va veti lovi de aceasta problema, veti sti ca solutia este “kinit”.
+Так что, если вы столкнетесь с этой проблемой, то вы будете знать, что решение через "kinit".
 
-translateme
 > O ultima informatie despre o operatie pe care nu ati vazut-o pentru ca am facut-o inainte, dar pe care va trebui sa o faceti cand incepeti sa lucrati pe statia voastra de lucru.
+И еще кое-что чего вы не видели, т.к. я вам этого еще не показывал, когда вы воспользуетесь комьютером в первый раз, вам нужно будет сделать это самостоятельно.
+
+you won't have it when you'll use your computer for the first time, so you'll have to do it yourself.
 
 translateme
 > Cand veti incerca sa faceti un “commit”, “git” va va atentiona ca nu cunoaste numele si nici mail-ul vostru, si veti vedea un mesaj foarte lung de eroare pentru a va configura accesul la “git”.
+Когда вы захотите сделать "commit", "git" вам скажет "я не знаю не знаю ни логина, ни пароля, но я сгенерирую автоматически их для тебя" и вы увидите очень длинное сообщение об ошибке, которое говорит вам чтобы вы настроили ваш "git" и т.д.
 
 translateme
 > Este foarte simplu, trebuie lansate doua comenzi, pe care “git” vi le indica.
+Это очень просто, вы должны будете выполнить две команды, которые вам указывает «git».
 
 translateme
 > Ca atare, nu va impacientati cand veti vedea mesajul, nu ati stricat nimic.
+Поэтому когда вы это увидите, то не переживайте, вы нигде не накосячили, просто делайте, так как сказано.
 
 translateme
 > Faceti ceea ce va indica, completand numele si email-ul, si “git” va fi multumit.
+Напишите ваше имя, фамилию и почту и "git" будет рад этому.
 
 translateme
 > Am facut practic turul complet al cunostintelor necesare pentru a folosi serverul Vogsphere, iar eu va recomand inca o data sa mergeti sa cititi documentaia de pe “git-scm.com”, pentru ca “git” e un sistem foarte evoluat care ofera mult mai multe posibilitati decat extrem de simplul exemplu pe care vi l-am prezentat azi.
+Так, мы обсудили почти все, что вам нужно знать о Vogsphere, я еще раз настаиваю на том, чтобы вы прочитали документацию на сайте “git-scm.com”, потому что «git» - это очень продвинутая система, которая предлагает гораздо больше возможностей, чем в том простом примере, который я вам сегодня показал.
 
 translateme
 > Ce am aratat eu este esentialul necesar pentru a va putea preda proiectele, dar se pot face lucruri mult mai geniale cu “git” daca stiti sa-l folositi, incat ar fi pacat sa nu va documentati despre asta si sa nu utilizati toate posibilitatile acestui minunat program.
+this was just the essential to manage deliverin something
+Все это является основой для управления отправкой чего-либо. В любом случае вы сможете сделать очень много классных штук с "git", зная лишь только как их использовать, будет очень стыдно не проинформировать себя в этом и не воспользоваться каждой возможностью этой замечательной программы, которая вам предлагает.
 
 translateme
 > Ajunge cu propaganda pentru “git”, va doresc o zi buna si pe curand!
+И пожалуй на этой пропаганде "git" и я желаю вам отличного дня, еще увидимся.

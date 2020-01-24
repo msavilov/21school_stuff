@@ -79,16 +79,16 @@
 * Чтобы отправить ваши изменения в Vogspher'у (т.е. в репозиторий, который будет оцениваться), вам нужно использовать команду ```git push```. не забудьте указать место назначения ```git push origin master```, когда в самый первый раз будете использовать ```git push```.
   > To send your revisions to Vogsphere’s side (i.e. to the repository that’s going to be used for evaluations), you have to use the git push command. On your very first push to a repository, don’t forget to specify the destination (git push origin master).
 
-* После успешного push'a, все ваши изменения будут находиться на копии в Vogsphere вашего репозитория и будут видны в процессе оценки.
+* После успешного выполнения push, все ваши изменения будут находиться на копии в Vogsphere вашего репозитория и будут видны в процессе оценки.
   > After a successful push, all your revisions will exist on Vogsphere’s copy of your repository and will be visible during evaluation.
 
-* Очевидно, что любые созданные изменения на вашей локальной копии после push'a не будут существовать в копии репозитория на Vogsphere. Вы также должны за'push'ить их, к счастью это не происходит автоматически. Будет очень грустно работать со сложным проектом и забыть за'push'ить его, не правда ли?
+* Очевидно, что любые созданные изменения на вашей локальной копии после push не будут существовать в копии репозитория на Vogsphere. Вы также должны выполнить push файлов, к счастью это не происходит автоматически. Будет очень грустно работать со сложным проектом и забыть push фалов, не правда ли?
   > Obviously, any revisions created on your local copy after a push won’t exist on Vogsphere’s copy of your repository. You must push them as well, this is (fortunately) not automatic. It would be a shame to work hard on a project and forget to push it, wouldn’t it?
 
-* Вы можете clone'ровать свежую копию вашего репозитория в текущую папку, в любое время, если вы хотите проверить, что было успешно выгружено (т.е. какие данные имеются на копии репозитория в Vogsphere).
+* Вы можете сделать свежий clone вашего репозитория в текущую папку, в любое время, если вы хотите проверить, что было успешно выгружено (т.е. какие данные имеются на копии репозитория в Vogsphere).
   > If you wish to check what have been effectively turned in (i.e. which data is available on Vogsphere’s copy of your repository) at anytime, you can clone a fresh local copy of your repository in a temporary folder. This clone will be the exact copy of what you would have turned in if the evaluation would happen right now.
 
-* Когда работаете в команде (в некоторых проектах или rush'ах), вы столкнетесь с вопросами по синхронизации локальной копией репозитория вашей команды, между ее участниками. Существуют несколько решений этой проблемы, которые подробно описаны в документации по Git...
+* Когда работаете в команде (в каких-то проектах или rush'ах), вы столкнетесь с вопросами по синхронизации локальной копией репозитория вашей команды, между ее участниками. Существуют несколько решений этой проблемы, которые подробно описаны в документации по Git...
   > When you work as a team (for some projects or rushes), you will face synchronisation issues between each team member’s local copy of your team’s repository. Several solution to solve this exist and are covered in detail in Git’s documentation...
 
 ### II.2 Пример / Exemple ###
@@ -155,8 +155,8 @@ zaz@blackjack d00 $
 * Vogsphere использует тикеты Kerberos, для авторизации. Тикет автоматически приобретается, когда вы входите в систему. Однако, через некоторые время тикет истекает. Вы можете приобрести новый тикет с помощью команды ```kinit```, если у вас не получается воспользоваться Vogsphere.
   > Vogsphere uses a Kerberos ticket to authentify you. A ticket is automaticaly acquired when you log in your session. However, after some time, this ticket will expire. If you are unable to use Vogsphere, you can acquire a new ticket by using the kinit command.
 
-* Даты и точное время закрытия репозиториев для сдачи будут указаны на странице в intranet. У вас все еще будет возможность просмотреть ваш репозиторий, но не будет возможности за'push'ить какие-либо данные.
+* Даты и точное время закрытия репозиториев для сдачи будут указаны на странице в intranet. У вас все еще будет возможность просмотреть ваш репозиторий, но не будет возможности выполнить push каких-либо данных.
   > Your turn-in repositories will close at the exact date and time specified on your project’s page on the intranet. You will still have a read-access on your repository, but you won’t be allowed to push data anymore.
 
-* Когда вы подключаетесь к Vogsphere, дата и время, используемые для проверки вашего доступа на запись в репозитории на Vogsphere, являются датой и временем вашего подключения к Vogsphere. Если слишком много студентов попытаются за'push'ить данные одновременно, то ваш запрост будет выставлен в очередь (Vogsphere вас уведомит об этом). Не волнуйтесь, до тех пор, пока вы не прервете соединение или не за'push'ите перед сроком сдачи, ваш push будет принят если дата и время подачи уже истекли. Но в любом случае, кто будет настолько глуп, чтобы сдавать свою работу в последний момент...
+* Когда вы подключаетесь к Vogsphere, дата и время, используемые для проверки вашего доступа на запись в репозитории на Vogsphere, являются датой и временем вашего подключения к Vogsphere. Если слишком много студентов попытаются выполнить push данных одновременно, то ваш запрост будет выставлен в очередь (Vogsphere вас уведомит об этом). Не волнуйтесь, до тех пор, пока вы не прервете соединение или не выполните push перед сроком сдачи, то ваш push будет принят если дата и время подачи уже истекли. Но в любом случае, кто будет настолько глуп, чтобы сдавать свою работу в последний момент...
   > When you connect to Vogsphere, the date and time used to check your write access to your repository on Vogsphere is the date and time of your connection to Vogsphere. If too many students try to push data at the very same time, your request will be queued (Vogsphere will notify you). Don’t worry, as long as you don’t cut the connection or you make your push before the deadline, you push will be accepted if the turn in date and time expired. But anyway, who could be silly enough to turn his/her work in at the last moment...
