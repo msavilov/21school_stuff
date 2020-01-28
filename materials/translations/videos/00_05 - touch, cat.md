@@ -6,11 +6,9 @@
 
 надеюсь, что вы все сделали правильно, мы увидим некоторые команды, которые будут полезны на бассейне
 
-> sperând ca ati înțeles bine, vom vedea cateva comenzi care va vor fi utile in piscina
+> si de altfel, care va vor fi utile tot timpul.
 
 и кроме того, это будет полезно для вас все время.
-
-> si de altfel, care va vor fi utile tot timpul.
 
 > Prima e comanda "touch", care va permite sa creați un fișier,
 
