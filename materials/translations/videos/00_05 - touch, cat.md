@@ -1,6 +1,5 @@
 > Deci acum ca am văzut cum sa ne plimbam in sistemul de fișiere, si ce este un sistem de fișiere, sperând ca ati inteles bine, vom vedea cateva comenzi care va vor fi utile in piscina sperând ca ati înțeles bine, vom vedea cateva comenzi care va vor fi utile in piscina si de altfel, care va vor fi utile tot timpul.
 
-<<<<<<< HEAD
 Итак, теперь, когда мы увидели, что такое файловая система и как ее просматривать, надеюсь, вы самостоятельно запомнили, как это делать, то давайте посмотрим на некоторые команды, которые будут полезны вам до конца Бассейна по Си и сам факт пользы будет периодический.
 
 > Prima e comanda "touch", care va permite sa creați un fișier, comanda "cat" care va permite sa vedeți ce e in fișier si vi-l afiseaza pe ecran, comanda "cp" care copiaza, "mv" care muta, "rm", pe care am vazut-o deja impreuna, si va permite sa stergeti, si "chmod" care va permite sa schimbați drepturile pe un fișier sau un director, lucru important, ca prietenii voștri sa nu se amuze stergandu-va fișierele de exemplu; știind ca oricum vor incerca.
@@ -8,31 +7,6 @@
 >the first command line is "touch" - create file, "cat" - previewer files content (displays a file content on screen), "cp" - copy, "mv" - move, "rm" - remove (as seen earlier on), "chmod" - changes access permissions to file system objects, that's important to know in order to dodge classmates pranks on your work, they'll try anyway.
 
 Первая команда "touch" - создать файл, "cat" - обзор содержимого файла (выводит содержимое на экран), "cp" - копировать, "mv" - переместить, "rm" - удалить (как вы уже видели), "chmod" - сменить права доступа к объектам файловой системы, это очень важно знать, чтобы избежать пранков над вашей работой, вашими одноклассниками.
-=======
-Итак, теперь, когда мы увидели, как ходить по файловой системе и что такое файловая система,
-
-Итак, теперь, когда мы увидели, как ходить по файловой системе и что такое файловая система,
-
-> sperând ca ati inteles bine, vom vedea cateva comenzi care va vor fi utile in piscina
-
-надеюсь, что вы все сделали правильно, мы увидим некоторые команды, которые будут полезны на бассейне
-
-> si de altfel, care va vor fi utile tot timpul.
-
-и кроме того, это будет полезно для вас все время.
-
-> Prima e comanda "touch", care va permite sa creați un fișier,
-
-> comanda "cat" care va permite sa vedeți ce e in fișier si vi-l afiseaza pe ecran,
-
-> comanda "cp" care copiaza, "mv" care muta,
-
-> "rm", pe care am vazut-o deja impreuna, si va permite sa stergeti,
-
-> si "chmod" care va permite sa schimbați drepturile pe un fișier sau un director,
-
-> lucru important, ca prietenii voștri sa nu se amuze stergandu-va fișierele de exemplu; știind ca oricum vor incerca.
->>>>>>> 6bfee6a387bb070fd04e5f06cb5001824f12d658
 
 > Deci, prima comanda: "touch".
 
