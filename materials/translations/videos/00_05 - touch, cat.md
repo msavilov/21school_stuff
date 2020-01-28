@@ -1,6 +1,6 @@
 > Deci acum ca am văzut cum sa ne plimbam in sistemul de fișiere, si ce este un sistem de fișiere,
 
-датуте
+**датуте**
 
 > sperând ca ati inteles bine, vom vedea cateva comenzi care va vor fi utile in piscina
 
