@@ -1,8 +1,14 @@
 > Deci acum ca am văzut cum sa ne plimbam in sistemul de fișiere, si ce este un sistem de fișiere,
 
+Итак, теперь, когда мы увидели, как ходить по файловой системе и что такое файловая система,
+
 > sperând ca ati inteles bine, vom vedea cateva comenzi care va vor fi utile in piscina
 
+надеюсь, что вы все сделали правильно, мы увидим некоторые команды, которые будут полезны на бассейне
+
 > sperând ca ati înțeles bine, vom vedea cateva comenzi care va vor fi utile in piscina
+
+и кроме того, это будет полезно для вас все время.
 
 > si de altfel, care va vor fi utile tot timpul.
 
