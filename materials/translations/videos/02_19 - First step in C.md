@@ -1,74 +1,111 @@
-> Buna ziua si bine ati venit in aceasta prima zi de limbaj C, ziua 02. 
+> Buna ziua si bine ati venit in aceasta prima zi de limbaj C, ziua 02.
+Hello and welcome to this first day of language C, day 02.
+Здравствуйте и добро пожаловать в этот первый день языка C, день 02.
 
 > Vom vedea impreuna cum sa scrieti primul vostru program si cum sa il compilati astfel incat sa fie executat de catre calculator.
+Мы вместе увидим, как написать вашу первую программу и как скомпилировать ее так, чтобы она выполнялась компьютером.
 
 > Mai intai, vom deschide cu "emacs" un fisier jour02.c. 
+Сначала мы откроем c помощью "emacs" файл jour02.c.
 
 > Extensia .c ne va permite noua si calculatorului sa recunoastem ca este vorba de un fisier sursa. 
+Расширение .c позволит нам и компьютеру понять, что это исходный файл.
 
 > Dupa ce ati deschis un fisier .c cu ajutorul utilitarului "emacs" veti genera un header folosind combinatia de taste Control+C, Control+H. 
+После того, как вы откроете файл .c с помощью утилиты "emacs", сгенерируйте заголовок, используя комбинацию клавиш Control + C, Control + H.
 
-> Aceasta combinatie va genera un header standard de-al scolii. 
+> Aceasta combinatie va genera un header standard de-al scolii.
+Эта комбинация будет генерировать стандартный заголовок школы.
 
 > Daca folositi utilitarul "vim", va trebui sa folositi tasta F1. 
+Если вы используете утилиту "vim", вам нужно будет использовать клавишу F1.
 
 > Vom incepe prin a declara punctul de intrare in program: functia "main". 
+Начнем с объявления точки входа в программу: функции "main".
 
-> Fiecare functie scrisa in limbajul C are asociat un tip. 
+> Fiecare functie scrisa in limbajul C are asociat un tip.
+Каждая функция, написанная на языке C, имеет связанный с ней тип.
 
 > Acesta este tipul valorii returnate de functie. Vom incepe asadar sa scriem functia "main" care returneaza o valoare de tip "int".
+Это тип значения, которое возвращает функция. Затем мы начнем писать функцию «main», которая возвращает значение «int».
 
 > Daca functia nu ar returna nimic, vom scrie ca returneaza "void" (care e o valoare nula). 
+Если функция ничего не возвращает, мы пишем, что она возвращает «void» (что является нулевым значением).
 
 > Deci nu va returna nimic. 
+Так что ничего не вернется.
 
 > Intrucat functia noastra returneaza un "int", 
+Поскольку наша функция возвращает "int",
 
 > vom scrie o instructiune "return(O)" care semnifica faptul ca programul s-a incheiat fara eroare. 
+мы напишем оператор return (O), что означает, что программа завершилась без ошибок.
 
 > Prin conventia aceasta semnifica faptul ca totul s-a terminat cu bine. 
+Это соглашение означает, что все хорошо закончилось.
 
 > In mod normal, functia "main" are argumente, dar in cazul acestui program vom neglija acest aspect.
+Обычно функция «main» имеет аргументы, но для этой программы мы будем пренебрегать этим аспектом.
 
 > Tocmai am scris o functie care nu face nimic, 
+Я просто написал функцию, которая ничего не делает,
 
 > doar returneaza valoarea 0 semnificand faptul ca executia programului s-a incheiat fara eroare. 
+она возвращает только значение 0, означающее, что выполнение программы завершилось без ошибок.
 
 > Vom salva fisierul folosind Control+X, Control+S. 
+Мы сохраним файл используя Control + X, Control + S.
 
-> Folosind Control+Z vom pune editorul "emacs" in background. Vedeti in "shell" ca e suspendat. 
+> Folosind Control+Z vom pune editorul "emacs" in background. Vedeti in "shell" ca e suspendat.
+Используя Control + Z, мы переведём редактор "emacs" в фоновый режим. Вы видите в shell, что она приостановлена.
 
 > Vom compila fisierul folosind compilatorul "gcc". 
+Мы скомпилируем файл, используя компилятор "gcc".
 
-> Compilatorul "gcc" are mai multe optiuni. 
+> Compilatorul "gcc" are mai multe optiuni.
+Компилятор "gcc" имеет несколько опций.
 
 > Vom folosi optiunea "-o" care permite specificarea fisierului de iesire, numele executabilului pe care-l vom crea.
+Мы будем использовать опцию «-o», которая позволяет вам указать выходной файл, имя исполняемого файла, который мы создадим.
 
 > Vom indica un nume pentru fisierul de iesire: jour02. 
+Укажем имя для выходного файла: day02.
 
-> Si-i dam fisierul sursa, jour02.c. 
+> Si-i dam fisierul sursa, jour02.c.
+Если бы я дал ей исходный файл, day02.c.
 
 > Atentie sa nu folositi drept fisier de iesire, fisierul sursa pe care tocmai l-ati creat (jour02.c), deoarece compilatorul va suprascrie continutul acestuia!
+Будьте осторожны, чтобы не использовать в качестве выходного файла исходный файл, который вы только что создали (day02.c), потому что компилятор перезаписывает его содержимое!
 
-> "gcc" a creat fisierul executabil. 
+> "gcc" a creat fisierul executabil.
+«gcc» создал исполняемый файл.
 
 > Priviti, in director avem un fisier jour02 si un fisier jour02.c. 
+Посмотрите, в каталоге у нас есть файл day02 и файл day02.c.
 
 > Putem executa acum, dupa cum indica drepturile fisierului (optiunea x). 
+Теперь мы можем выполнить, как указано в правах на файл (опция x).
 
 > Pentru a fi sigur ca executam un fisier din directorul current vom folosi si jour02. 
+Чтобы быть уверенным, что мы запускаем файл из текущего каталога, мы также будем использовать day02.
 
 > Programul este executat si cum nu face nimic, nu vedem nimic afisat. 
+Программа выполняется, и поскольку она ничего не делает, мы ничего не видим.
 
 > In continuare il vom face sa afiseze ceva. 
+Дальше мы заставим её что-то показать.
 
-> Cu "fg" repunem "emacs" in prim plan ("foreground"). 
+> Cu "fg" repunem "emacs" in prim plan ("foreground").
+С помощью «fg» мы помещаем «emacs» на передний план («foreground»).
 
 > Vom folosi apelul de sistem "write". 
+Мы будем использовать системный вызов «write».
 
 > Vom folosi iesirea standard, care are identificatorul de fisier 1. 
+Мы будем использовать стандартный вывод, который имеет идентификатор файла 1.
 
 > Vom afisa un singur caracter, si-i spunem cate caractere are sirul, deci unul singur.
+Мы отобразим только один символ и сообщим ему, сколько символов в строке, т.е. только один.
 
 > Vom verifica manualul (man) functiei "write". 
 
